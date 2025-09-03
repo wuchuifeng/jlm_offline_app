@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head_banner"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_anim_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/ic_launcher" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingHorizontal="10dp"
+                    android:text="账号"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="请输入账号"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColorHint="@color/color_cf"
+                    android:textSize="18sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                style="@style/divider_horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingHorizontal="10dp"
+                    android:text="密码"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/color_cf"
+                    android:textSize="18sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.hjq.shape.view.ShapeButton
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                app:shape_radius="99dp"
+                app:shape_solidColor="@color/theme_color" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

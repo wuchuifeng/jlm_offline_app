@@ -1,0 +1,107 @@
+[
+    {
+        "category_key": "category_common",
+        "languageList": [
+            {
+                "name_key": "name_chinese",
+                "country_key": "country_china",
+                "translate_key": "cn",
+                "synthesis_key": "1",
+                "sortLetters": "*",
+                "azure_male_voicer": ["xiaoyi"],
+                "azure_female_voicer": ["xiaoyi"],
+                "key": "zh"
+            },
+            {
+                "name_key": "name_english",
+                "country_key": "country_usa",
+                "translate_key": "en",
+                "synthesis_key": "2",
+                "sortLetters": "*",
+                "azure_male_voicer": ["catherine"],
+                "azure_female_voicer": ["catherine"],
+                "key": "en"
+            },
+            {
+                "name_key": "name_spanish",
+                "country_key": "country_spain",
+                "translate_key": "es",
+                "synthesis_key": "23",
+                "sortLetters": "*",
+                "azure_male_voicer": ["aurora"],
+                "azure_female_voicer": ["aurora"],
+                "key": "es"
+            },
+            {
+                "name_key": "name_french",
+                "country_key": "country_france",
+                "translate_key": "fr",
+                "synthesis_key": "97",
+                "sortLetters": "*",
+                "azure_male_voicer": ["lisa"],
+                "azure_female_voicer": ["lisa"],
+                "key": "fr"
+            },
+            {
+                "name_key": "name_russian",
+                "country_key": "country_russia",
+                "translate_key": "ru",
+                "synthesis_key": "6",
+                "sortLetters": "*",
+                "azure_male_voicer": ["keshu"],
+                "azure_female_voicer": ["keshu"],
+                "key": "ru"
+            },
+            {
+                "name_key": "name_arabic",
+                "country_key": "country_saudiarabia",
+                "translate_key": "ar",
+                "synthesis_key": "88",
+                "sortLetters": "*",
+                "azure_male_voicer": ["rania"],
+                "azure_female_voicer": ["rania"],
+                "key": "ar"
+            },
+            {
+                "name_key": "name_german",
+                "country_key": "country_germany",
+                "translate_key": "de",
+                "synthesis_key": "93",
+                "sortLetters": "*",
+                "azure_male_voicer": ["christiane"],
+                "azure_female_voicer": ["christiane"],
+                "key": "de"
+            },
+            {
+                "name_key": "name_japanese",
+                "country_key": "country_japan",
+                "translate_key": "ja",
+                "synthesis_key": "5",
+                "sortLetters": "*",
+                "azure_male_voicer": ["zhongcun"],
+                "azure_female_voicer": ["zhongcun"],
+                "key": "ja"
+            },
+            {
+                "name_key": "name_korean",
+                "country_key": "country_korea",
+                "translate_key": "ko",
+                "synthesis_key": "16",
+                "sortLetters": "*",
+                "azure_male_voicer": ["miya"],
+                "azure_female_voicer": ["miya"],
+                "key": "ko"
+            },
+            {
+                "name_key": "name_thai",
+                "country_key": "country_thailand",
+                "translate_key": "th",
+                "synthesis_key": "27",
+                "sortLetters": "SEA",
+                "azure_male_voicer": ["suparut"],
+                "azure_female_voicer": ["suparut"],
+                "key": "th"
+            }
+        ]
+    }
+]

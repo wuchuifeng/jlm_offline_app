@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/item_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingHorizontal="15dp"
+    android:paddingVertical="10dp"
+    app:shape_radius="10dp"
+    app:shape_solidColor="@color/white"
+    app:shape_type="rectangle">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_device_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tool:text="2024/03/28" />
+
+    <com.hjq.shape.view.ShapeTextView
+        android:id="@+id/tv_device_operate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="6dp"
+        android:text="连接"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:shape_radius="100dp"
+        app:shape_solidColor="@color/theme_color"
+        app:shape_type="rectangle" />
+
+
+</com.hjq.shape.layout.ShapeLinearLayout>

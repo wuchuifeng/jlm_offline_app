@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <cn.chawloo.base.widget.HeadBanner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="设备信息" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="10dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/mine_head_def02"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:visibility="gone"
+            android:id="@+id/iv_avatar_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mine_userid_icon_edit"
+            app:layout_constraintBottom_toBottomOf="@id/iv_avatar"
+            app:layout_constraintEnd_toEndOf="@id/iv_avatar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- 去充值 -->
+    <com.hjq.shape.layout.ShapeLinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        app:shape_radius="99dp"
+        app:shape_solidColor="@android:color/white">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_balance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            tools:text="0 Fish" />
+
+        <com.hjq.shape.view.ShapeTextView
+            android:id="@+id/tv_to_recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="6dp"
+            android:text="去充值"
+            android:textColor="@color/theme_color"
+            android:textSize="11sp"
+            app:shape_radius="99dp"
+            app:shape_solidColor="#200A84FF" />
+    </com.hjq.shape.layout.ShapeLinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler"
+        />
+
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <com.hjq.shape.layout.ShapeLinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:orientation="vertical"-->
+<!--            android:paddingHorizontal="20dp"-->
+<!--            app:shape_radiusInTopLeft="20dp"-->
+<!--            app:shape_radiusInTopRight="20dp"-->
+<!--            app:shape_solidColor="@android:color/white">-->
+<!--            &lt;!&ndash; 设备ID &ndash;&gt;-->
+<!--            <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <androidx.appcompat.widget.AppCompatTextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingVertical="20dp"-->
+<!--                    android:text="设备ID"-->
+<!--                    android:textColor="@color/color_99"-->
+<!--                    android:textSize="16sp" />-->
+
+<!--                <androidx.appcompat.widget.AppCompatTextView-->
+<!--                    android:id="@+id/tv_id"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:drawableEnd="@drawable/mine_userid_icon_copy"-->
+<!--                    android:drawablePadding="6dp"-->
+<!--                    android:gravity="end|center_vertical"-->
+<!--                    android:textColor="@color/theme_color"-->
+<!--                    android:textSize="16sp"-->
+<!--                    tools:text="5215645" />-->
+<!--            </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+<!--            <View style="@style/divider_horizontal" />-->
+<!--            &lt;!&ndash; SIN码 &ndash;&gt;-->
+<!--            <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <androidx.appcompat.widget.AppCompatTextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingVertical="20dp"-->
+<!--                    android:text="SIN码"-->
+<!--                    android:textColor="@color/color_99"-->
+<!--                    android:textSize="16sp" />-->
+
+<!--                <androidx.appcompat.widget.AppCompatTextView-->
+<!--                    android:id="@+id/tv_sin"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:drawableEnd="@drawable/mine_userid_icon_copy"-->
+<!--                    android:drawablePadding="6dp"-->
+<!--                    android:gravity="end|center_vertical"-->
+<!--                    android:textColor="@color/theme_color"-->
+<!--                    android:textSize="16sp"-->
+<!--                    tools:text="5215645" />-->
+<!--            </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+<!--            <View style="@style/divider_horizontal" />-->
+<!--        &lt;!&ndash;名称&ndash;&gt;-->
+<!--        <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingVertical="20dp"-->
+<!--                android:text="名称"-->
+<!--                android:textColor="@color/color_99"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/tv_nickname"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:drawableEnd="@drawable/list_right_icon_next"-->
+<!--                android:drawablePadding="6dp"-->
+<!--                android:gravity="center_vertical|end"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textSize="16sp"-->
+<!--                tools:text="张三丰" />-->
+<!--        </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+<!--        <View style="@style/divider_horizontal" />-->
+
+<!--        <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingVertical="20dp"-->
+<!--                android:text="性别"-->
+<!--                android:textColor="@color/color_99"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/tv_gender"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:drawableEnd="@drawable/list_right_icon_next"-->
+<!--                android:drawablePadding="6dp"-->
+<!--                android:gravity="end|center_vertical"-->
+<!--                android:hint="请填写性别"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textColorHint="@android:color/black"-->
+<!--                android:textSize="16sp" />-->
+<!--        </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+<!--        <View style="@style/divider_horizontal" />-->
+
+<!--        <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingVertical="20dp"-->
+<!--                android:text="公司"-->
+<!--                android:textColor="@color/color_99"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/tv_company"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:drawablePadding="6dp"-->
+<!--                android:gravity="end|center_vertical"-->
+<!--                android:hint="未填写公司"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textColorHint="@android:color/black"-->
+<!--                android:textSize="16sp" />-->
+<!--        </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+<!--        <View style="@style/divider_horizontal" />-->
+
+<!--        <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingVertical="20dp"-->
+<!--                android:text="等级"-->
+<!--                android:textColor="@color/color_99"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:drawablePadding="6dp"-->
+<!--                android:gravity="end|center_vertical"-->
+<!--                android:hint="普通用户"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textColorHint="@android:color/black"-->
+<!--                android:textSize="16sp" />-->
+<!--        </androidx.appcompat.widget.LinearLayoutCompat>-->
+<!--            <View style="@style/divider_horizontal" />-->
+
+<!--        <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingVertical="20dp"-->
+<!--                android:text="等级"-->
+<!--                android:textColor="@color/color_99"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:drawablePadding="6dp"-->
+<!--                android:gravity="end|center_vertical"-->
+<!--                android:hint="普通用户"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textColorHint="@android:color/black"-->
+<!--                android:textSize="16sp" />-->
+<!--        </androidx.appcompat.widget.LinearLayoutCompat>-->
+<!--        <View style="@style/divider_horizontal" />-->
+
+<!--        <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingVertical="20dp"-->
+<!--                android:text="等级"-->
+<!--                android:textColor="@color/color_99"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:drawablePadding="6dp"-->
+<!--                android:gravity="end|center_vertical"-->
+<!--                android:hint="普通用户"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textColorHint="@android:color/black"-->
+<!--                android:textSize="16sp" />-->
+<!--        </androidx.appcompat.widget.LinearLayoutCompat>-->
+<!--        <View style="@style/divider_horizontal" />-->
+
+<!--        <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingVertical="20dp"-->
+<!--                android:text="等级"-->
+<!--                android:textColor="@color/color_99"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:drawablePadding="6dp"-->
+<!--                android:gravity="end|center_vertical"-->
+<!--                android:hint="普通用户"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textColorHint="@android:color/black"-->
+<!--                android:textSize="16sp" />-->
+<!--        </androidx.appcompat.widget.LinearLayoutCompat>-->
+<!--        <View style="@style/divider_horizontal" />-->
+
+<!--        <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingVertical="20dp"-->
+<!--                android:text="等级"-->
+<!--                android:textColor="@color/color_99"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:drawablePadding="6dp"-->
+<!--                android:gravity="end|center_vertical"-->
+<!--                android:hint="普通用户"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textColorHint="@android:color/black"-->
+<!--                android:textSize="16sp" />-->
+<!--        </androidx.appcompat.widget.LinearLayoutCompat>-->
+<!--    </com.hjq.shape.layout.ShapeLinearLayout>-->
+<!--    </androidx.core.widget.NestedScrollView>-->
+</androidx.appcompat.widget.LinearLayoutCompat>

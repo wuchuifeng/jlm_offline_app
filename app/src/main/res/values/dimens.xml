@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_text_headerTitle">20sp</dimen>
+    <dimen name="text_big">24sp</dimen>
+    <dimen name="text_primary">22sp</dimen>
+    <dimen name="text_secondary">20sp</dimen>
+    <dimen name="text_tertiary">17sp</dimen>
+    <dimen name="text_tiny">16sp</dimen>
+    <dimen name="text_describ">20sp</dimen>
+    <dimen name="text_hint">18sp</dimen>
+
+    <dimen name="home_item_title">23sp</dimen>
+
+    <dimen name="menu_title">21sp</dimen>
+    <dimen name="menu_subtitle">19sp</dimen>
+
+    <dimen name="header_title">20sp</dimen>
+
+    <dimen name="trans_title">18sp</dimen>
+    <dimen name="trans_content_target">21sp</dimen>
+    <dimen name="trans_content_source">21sp</dimen>
+    <dimen name="trans_title_time">19sp</dimen>
+    <dimen name="trans_title_subTime">17sp</dimen>
+    <dimen name="trans_menu_title">21sp</dimen>
+
+    <dimen name="btn_confirm">20sp</dimen>
+</resources>

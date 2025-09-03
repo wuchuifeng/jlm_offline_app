@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <cn.chawloo.base.widget.HeadBanner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="存储空间" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginHorizontal="50dp"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_rawRes="@raw/ani_storage"
+                    app:lottie_repeatMode="reverse" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_storage_space"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="计算中..."
+                    android:textColor="@android:color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="可清理的存储空间"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_storage_space" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.hjq.shape.layout.ShapeLinearLayout
+                android:id="@+id/ll_offline_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+                app:shape_radius="10dp"
+                app:shape_solidColor="@android:color/white">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/set_clear_icon_offline" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:gravity="center_vertical"
+                        android:text="离线包"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="可清理已下载的离线包数据"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_offline_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="计算中..."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_clear_offline_storage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:drawableEnd="@drawable/list_right_icon_next0"
+                        android:drawablePadding="3dp"
+                        android:enabled="false"
+                        android:gravity="center_vertical"
+                        android:text="清理"
+                        android:textColor="@color/selector_confirm_enable_text_color" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </com.hjq.shape.layout.ShapeLinearLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_history_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+                app:shape_radius="10dp"
+                app:shape_solidColor="@android:color/white">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/set_clear_icon_history" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:gravity="center_vertical"
+                        android:text="历史纪录"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="使用翻译模式时产生的数据，如同传模式、触控模式等"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_history_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="计算中..."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_clear_history_storage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:drawableEnd="@drawable/list_right_icon_next0"
+                        android:drawablePadding="3dp"
+                        android:enabled="false"
+                        android:gravity="center_vertical"
+                        android:text="清理"
+                        android:textColor="@color/selector_confirm_enable_text_color" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_chat_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+                app:shape_radius="10dp"
+                app:shape_solidColor="@android:color/white">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/set_clear_icon_chat" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:gravity="center_vertical"
+                        android:text="聊天纪录"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="使用Chat时产生的数据，聊天记录、图片、视频等"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_chat_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="计算中..."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_clear_chat_storage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:drawableEnd="@drawable/list_right_icon_next0"
+                        android:drawablePadding="3dp"
+                        android:enabled="false"
+                        android:gravity="center_vertical"
+                        android:text="清理"
+                        android:textColor="@color/selector_confirm_enable_text_color" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_cache_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+                app:shape_radius="10dp"
+                app:shape_solidColor="@android:color/white">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/set_clear_icon_storage" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:gravity="center_vertical"
+                        android:text="缓存"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="缓存是使用Timekettle过程中产生的临时数据，清理缓存不会影响正常使用。"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_cache_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="计算中..."
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_clear_cache_storage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:drawableEnd="@drawable/list_right_icon_next0"
+                        android:drawablePadding="3dp"
+                        android:enabled="false"
+                        android:gravity="center_vertical"
+                        android:text="清理"
+                        android:textColor="@color/selector_confirm_enable_text_color" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

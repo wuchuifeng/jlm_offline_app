@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <cn.chawloo.base.widget.HeadBanner
+        android:id="@+id/head_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="" />
+
+    <com.drake.statelayout.StateLayout
+        android:id="@+id/state"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/rl_webview_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <cn.chawloo.base.widget.WebKit
+                android:id="@+id/webview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:indeterminate="false"
+                android:indeterminateOnly="false"
+                android:progressDrawable="@drawable/webview_progress" />
+        </RelativeLayout>
+    </com.drake.statelayout.StateLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:shape_radiusInTopLeft="10dp"
+    app:shape_radiusInTopRight="10dp"
+    app:shape_solidColor="@android:color/white">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:text="字体大小"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_secondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@drawable/popup_icon_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.hjq.shape.layout.ShapeLinearLayout
+        android:id="@+id/cl_font_size_preview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingHorizontal="15dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:shape_radius="10dp"
+        app:shape_solidColor="@color/bg_color">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_font_size_preview_en"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello!"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_font_size_preview_ch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="你好!"
+            android:textColor="@color/color_66"
+            android:textSize="15sp" />
+    </com.hjq.shape.layout.ShapeLinearLayout>
+
+    <com.jaygoo.widget.RangeSeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="30dp"
+        app:layout_constraintTop_toBottomOf="@id/cl_font_size_preview"
+        app:rsb_gravity="center"
+        app:rsb_mode="single"
+        app:rsb_progress_color="#FFD7D7D7"
+        app:rsb_progress_default_color="#FFD7D7D7"
+        app:rsb_progress_height="20dp"
+        app:rsb_step_auto_bonding="true"
+        app:rsb_step_color="@android:color/white"
+        app:rsb_step_height="18dp"
+        app:rsb_step_width="3dp"
+        app:rsb_steps="4"
+        app:rsb_thumb_drawable="@drawable/shape_step_seek_bar_thumb"
+        app:rsb_thumb_height="40dp"
+        app:rsb_thumb_width="40dp"
+        app:rsb_tick_mark_layout_gravity="bottom" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:layout_marginBottom="50dp"
+        android:paddingHorizontal="50dp"
+        app:flexDirection="row"
+        app:flexWrap="nowrap"
+        app:justifyContent="space_between"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seek_bar">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_short"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="较小"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/text_secondary"
+            app:layout_constraintEnd_toStartOf="@id/tv_shorter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_shorter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="小"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/text_secondary"
+            app:layout_constraintEnd_toStartOf="@id/tv_default"
+            app:layout_constraintStart_toEndOf="@id/tv_short"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="正常"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/text_secondary"
+            app:layout_constraintEnd_toStartOf="@id/tv_longer"
+            app:layout_constraintStart_toEndOf="@id/tv_shorter"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_longer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="大"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/text_secondary"
+            app:layout_constraintEnd_toStartOf="@id/tv_long"
+            app:layout_constraintStart_toEndOf="@id/tv_default"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_long"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="较大"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/text_secondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_longer"
+            app:layout_constraintTop_toTopOf="parent" />
+    </com.google.android.flexbox.FlexboxLayout>
+</com.hjq.shape.layout.ShapeConstraintLayout>

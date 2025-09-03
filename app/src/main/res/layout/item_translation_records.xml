@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/item_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    app:shape_radius="10dp"
+    app:shape_solidColor="@android:color/white"
+    app:shape_type="rectangle">
+
+    <View
+        android:id="@+id/view_tag"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:background="@color/theme_color"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/ll_firstline"
+        app:layout_constraintEnd_toStartOf="@id/ll_firstline"
+        app:layout_constraintTop_toTopOf="@id/ll_firstline" />
+
+    <!-- 第一行 -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:id="@+id/ll_firstline"
+        android:paddingHorizontal="12dp"
+        >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/ic_home_item1"
+            android:id="@+id/iv_avatar"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="同声传译"
+            android:textColor="@color/color_text_primary"
+            android:textSize="@dimen/trans_title"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tv_name"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_595959"
+            android:textSize="@dimen/trans_title_subTime"
+            tool:text="02:13" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_selector"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/selector_uikit_control_picker"
+            android:visibility="gone"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+<!--    <com.hjq.shape.view.ShapeTextView-->
+<!--        android:id="@+id/tv_date"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="20dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:textColor="@color/color_595959"-->
+<!--        android:textSize="12sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintStart_toEndOf="@id/view_tag"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_goneMarginLeft="22dp"-->
+<!--        app:shape_textColor="@android:color/black"-->
+<!--        app:shape_textSelectedColor="@color/theme_color"-->
+<!--        tool:text="2024/03/28" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        android:id="@+id/tv_time"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:textColor="@color/color_595959"-->
+<!--        android:textSize="12sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/tv_date"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@id/tv_date"-->
+<!--        tool:text="02:13" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatImageView-->
+<!--        android:id="@+id/img_selector"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:src="@drawable/selector_uikit_control_picker"-->
+<!--        android:visibility="gone"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/tv_date"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@id/tv_date" />-->
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_firstline">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_translation_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="@color/color_text_primary"
+            android:textSize="@dimen/trans_content_target"
+            tool:text="In the afternoon at the construction site in Liangxiang, during a brief rest, he was suddenly stunned by the scene in front of him" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_translation_second_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="@color/color_text_primary"
+            android:textSize="@dimen/trans_content_target"
+             />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="@color/color_text_describ"
+            android:textSize="@dimen/trans_content_source"
+            android:layout_marginBottom="10dp"
+            tool:text="下午在良乡的工地，一次短暂的休息中，他被眼前的一幕惊呆了。" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</com.hjq.shape.layout.ShapeConstraintLayout>

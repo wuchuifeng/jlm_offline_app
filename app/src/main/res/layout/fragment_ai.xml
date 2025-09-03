@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_main_bg"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fitsSystemWindows="true"
+        android:text="AI产品"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_big"
+        android:textStyle="bold" />
+
+    <com.drake.brv.PageRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_ai"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.drake.brv.PageRefreshLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/root_view_recharge_record"
+    android:paddingHorizontal="15dp"
+    android:paddingVertical="20dp"
+    app:shape_radius="10dp"
+    app:shape_shadowSize="5dp"
+    app:shape_shadowColor="#55000000"
+    app:shape_solidColor="@color/white"
+    app:shape_type="rectangle">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/order_charge_icon_fishcard"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingVertical="10dp"
+        android:textColor="@color/color_262626"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="卡片名称" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:textColor="@color/color_8c8c8c"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@id/tv_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        tools:text="2024/10/10 23:00" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:textColor="@color/theme_color"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_name"
+        app:layout_constraintEnd_toStartOf="@id/tv_price_unit"
+        tools:text="+30" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_price_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/theme_color"
+        android:textSize="13sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Flish" />
+
+
+</com.hjq.shape.layout.ShapeConstraintLayout>

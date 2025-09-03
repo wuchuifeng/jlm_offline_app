@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <cn.chawloo.base.widget.HeadBanner
+        android:id="@+id/head_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="充值" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingVertical="12dp"
+            android:text="剩余天数"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="999天"
+            android:textColor="@color/theme_color" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View style="@style/divider_horizontal" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="5dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="3"
+        tools:itemCount="3"
+        tools:listitem="@layout/item_recharge" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_pay_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_pay_method"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="3dp"
+            android:drawableStart="@drawable/charge_icon_wechat"
+            android:drawableEnd="@drawable/list_right_icon_next"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:text="微信支付"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.hjq.shape.view.ShapeButton
+        android:id="@+id/btn_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:paddingVertical="12dp"
+        android:text="充值"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:shape_radius="99dp"
+        app:shape_solidColor="@color/theme_color" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="20dp"
+        android:text="说明：\n1.Fish币钱包可以用于直接购买离线包、学习课程等\n2.Fish币为虚拟币，充值后Fish币不会过期，但无法提现或转赠他人"
+        android:textColor="@color/color_66" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

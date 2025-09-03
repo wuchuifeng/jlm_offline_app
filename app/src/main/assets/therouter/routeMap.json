@@ -1,0 +1,268 @@
+[
+  {
+    "path": "com.jlm.translator.act.speech.ListenerModeSettingAct",
+    "className": "com.jlm.translator.act.speech.ListenerModeSettingAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.speech.ListenModeAct",
+    "className": "com.jlm.translator.act.speech.ListenModeAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.speech.ListenFreeForTwoTalkModeAct",
+    "className": "com.jlm.translator.act.speech.ListenFreeForTwoTalkModeAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.speech.ListenFreeForMultiModeAct",
+    "className": "com.jlm.translator.act.speech.ListenFreeForMultiModeAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.UpdateNicknameAct",
+    "className": "com.jlm.translator.act.UpdateNicknameAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.TranslationRecordsSearchAct",
+    "className": "com.jlm.translator.act.TranslationRecordsSearchAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.TranslationRecordsDetailsAct",
+    "className": "com.jlm.translator.act.TranslationRecordsDetailsAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.TranslationRecordsAct",
+    "className": "com.jlm.translator.act.TranslationRecordsAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.TransDeviceInfoAct",
+    "className": "com.jlm.translator.act.TransDeviceInfoAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.TouchModeAct",
+    "className": "com.jlm.translator.act.TouchModeAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.TextTranslationAct",
+    "className": "com.jlm.translator.act.TextTranslationAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.StorageSpaceAct",
+    "className": "com.jlm.translator.act.StorageSpaceAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.SplashNewAct",
+    "className": "com.jlm.translator.act.SplashNewAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.SplashAct",
+    "className": "com.jlm.translator.act.SplashAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.SpeakerModeAct",
+    "className": "com.jlm.translator.act.SpeakerModeAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.SimulationModeAct",
+    "className": "com.jlm.translator.act.SimulationModeAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.SettingAct",
+    "className": "com.jlm.translator.act.SettingAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.SelectProductByAllEncyclopediaAct",
+    "className": "com.jlm.translator.act.SelectProductByAllEncyclopediaAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.RichTextAct",
+    "className": "com.jlm.translator.act.RichTextAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.RechargeDetailsAct",
+    "className": "com.jlm.translator.act.RechargeDetailsAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.RechargeAct",
+    "className": "com.jlm.translator.act.RechargeAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.ProductInstructionsAct",
+    "className": "com.jlm.translator.act.ProductInstructionsAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.PersonInfoAct",
+    "className": "com.jlm.translator.act.PersonInfoAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.MyOrderAct",
+    "className": "com.jlm.translator.act.MyOrderAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.MainAct",
+    "className": "com.jlm.translator.act.MainAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.LoginAct",
+    "className": "com.jlm.translator.act.LoginAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.ListenOriginalModeAct",
+    "className": "com.jlm.translator.act.ListenOriginalModeAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.ListenBilingualOriginalModeAct",
+    "className": "com.jlm.translator.act.ListenBilingualOriginalModeAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.ListenBilingualModeAct",
+    "className": "com.jlm.translator.act.ListenBilingualModeAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.FavoriteRecordAct",
+    "className": "com.jlm.translator.act.FavoriteRecordAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.FaqAct",
+    "className": "com.jlm.translator.act.FaqAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.DialogueRecordsDetailsAct",
+    "className": "com.jlm.translator.act.DialogueRecordsDetailsAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.DialogueModeSettingAct",
+    "className": "com.jlm.translator.act.DialogueModeSettingAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.DeviceInfoAct",
+    "className": "com.jlm.translator.act.DeviceInfoAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.ContactUsAct",
+    "className": "com.jlm.translator.act.ContactUsAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.CompanyIntroAct",
+    "className": "com.jlm.translator.act.CompanyIntroAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.translator.act.AboutUsAct",
+    "className": "com.jlm.translator.act.AboutUsAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "com.jlm.common.act.WebViewAct",
+    "className": "com.jlm.common.act.WebViewAct",
+    "action": "",
+    "description": "",
+    "params": {}
+  }
+]

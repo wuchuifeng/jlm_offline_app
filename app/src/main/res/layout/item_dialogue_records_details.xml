@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="6dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/tooltip_arrow_white_left"
+        android:paddingHorizontal="14dp"
+        android:paddingVertical="12dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_translation_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="6dp"
+            android:textSize="@dimen/trans_content_target"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Can you represent the police ?" />
+
+        <View
+            android:id="@+id/view_line"
+            style="@style/divider_horizontal"
+            android:layout_marginHorizontal="2dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_translation_content" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingVertical="6dp"
+            android:textColor="@color/color_262626"
+            android:textSize="@dimen/trans_content_source"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_line"
+            tools:text="你能代表警方吗？" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:src="@drawable/selector_uikit_control_picker"
+        android:visibility="invisible" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

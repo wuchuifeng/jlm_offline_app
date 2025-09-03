@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- header -->
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/head_banner"
+    style="@style/listener_headerRoot"
+    app:layout_constraintTop_toTopOf="@id/motion_layout"
+    >
+
+    <!--        "@drawable/tools_nav_icon_back_black_def"-->
+    <!--        <include layout="@layout/include_back" android:id="@+id/include_back"/>-->
+
+    <!-- 左输出UI -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <!--        "@drawable/tools_nav_icon_back_black_def"-->
+        <include layout="@layout/include_back" android:id="@+id/include_back" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_from_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="right"
+                >
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/lang_output_device"
+                    android:text="@string/str_translator"
+                    />
+                <com.hjq.shape.view.ShapeTextView
+                    style="@style/listener_lang_text"
+                    android:id="@+id/tv_from_language"
+                    android:text="中文"
+                    app:shape_radius="20dp"
+                    app:shape_solidColor="@color/color_light_blue"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </FrameLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--        android:src="@drawable/mine_offline_icon_exchange_single"-->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_arrow"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:src="@mipmap/ic_translate_right" />
+    <!-- 右输出UI -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_to_language"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/lang_output_device"
+                android:text="耳麦"
+                />
+
+            <com.hjq.shape.view.ShapeTextView
+                style="@style/listener_lang_text"
+                android:id="@+id/tv_to_language"
+                android:text="英文"
+                app:shape_radius="20dp"
+                app:shape_solidColor="@color/color_light_blue"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

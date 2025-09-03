@@ -1,0 +1,210 @@
+package com.jlm.translator.intelligent.locale
+
+import androidx.collection.ArrayMap
+import cn.chawloo.base.ext.topActivity
+import com.jlm.translator.R
+
+object LanguageLocale {
+
+    val languageLocaleMap = mapOf(
+        "name_southeast_asian_mixed" to topActivity.getString(R.string.name_southeast_asian_mixed),
+        "name_french_canada" to topActivity.getString(R.string.name_french_canada),
+        "name_chinese" to topActivity.getString(R.string.name_chinese),
+        "name_albanian" to topActivity.getString(R.string.name_albanian),
+        "name_arabic" to topActivity.getString(R.string.name_arabic),
+        "name_armenian" to topActivity.getString(R.string.name_armenian),
+        "name_azerbaijani" to topActivity.getString(R.string.name_azerbaijani),
+        "name_bengali" to topActivity.getString(R.string.name_bengali),
+        "name_bulgarian" to topActivity.getString(R.string.name_bulgarian),
+        "name_simplified_chinese" to topActivity.getString(R.string.name_simplified_chinese),
+        "name_traditional_chinese" to topActivity.getString(R.string.name_traditional_chinese),
+        "name_cantonese_traditional" to topActivity.getString(R.string.name_cantonese_traditional),
+        "name_cantonese_simplified" to topActivity.getString(R.string.name_cantonese_simplified),
+        "name_chinese_english_mixed" to topActivity.getString(R.string.name_chinese_english_mixed),
+        "name_croatian" to topActivity.getString(R.string.name_croatian),
+        "name_czech" to topActivity.getString(R.string.name_czech),
+        "name_danish" to topActivity.getString(R.string.name_danish),
+        "name_dutch" to topActivity.getString(R.string.name_dutch),
+        "name_english" to topActivity.getString(R.string.name_english),
+        "name_estonian" to topActivity.getString(R.string.name_estonian),
+        "name_filipino" to topActivity.getString(R.string.name_filipino),
+        "name_finnish" to topActivity.getString(R.string.name_finnish),
+        "name_french" to topActivity.getString(R.string.name_french),
+        "name_georgian" to topActivity.getString(R.string.name_georgian),
+        "name_german" to topActivity.getString(R.string.name_german),
+        "name_greek" to topActivity.getString(R.string.name_greek),
+        "name_gujarati" to topActivity.getString(R.string.name_gujarati),
+        "name_hebrew" to topActivity.getString(R.string.name_hebrew),
+        "name_hindi" to topActivity.getString(R.string.name_hindi),
+        "name_hungarian" to topActivity.getString(R.string.name_hungarian),
+        "name_icelandic" to topActivity.getString(R.string.name_icelandic),
+        "name_indonesian" to topActivity.getString(R.string.name_indonesian),
+        "name_irish" to topActivity.getString(R.string.name_irish),
+        "name_italian" to topActivity.getString(R.string.name_italian),
+        "name_japanese" to topActivity.getString(R.string.name_japanese),
+        "name_kannada" to topActivity.getString(R.string.name_kannada),
+        "name_kazakh" to topActivity.getString(R.string.name_kazakh),
+        "name_khmer" to topActivity.getString(R.string.name_khmer),
+        "name_korean" to topActivity.getString(R.string.name_korean),
+        "name_lao" to topActivity.getString(R.string.name_lao),
+        "name_latvian" to topActivity.getString(R.string.name_latvian),
+        "name_lithuanian" to topActivity.getString(R.string.name_lithuanian),
+        "name_macedonian" to topActivity.getString(R.string.name_macedonian),
+        "name_malay" to topActivity.getString(R.string.name_malay),
+        "name_malayalam" to topActivity.getString(R.string.name_malayalam),
+        "name_maltese" to topActivity.getString(R.string.name_maltese),
+        "name_marathi" to topActivity.getString(R.string.name_marathi),
+        "name_mongolian" to topActivity.getString(R.string.name_mongolian),
+        "name_norwegian" to topActivity.getString(R.string.name_norwegian),
+        "name_persian" to topActivity.getString(R.string.name_persian),
+        "name_polish" to topActivity.getString(R.string.name_polish),
+        "name_portuguese" to topActivity.getString(R.string.name_portuguese),
+        "name_punjabi" to topActivity.getString(R.string.name_punjabi),
+        "name_romanian" to topActivity.getString(R.string.name_romanian),
+        "name_russian" to topActivity.getString(R.string.name_russian),
+        "name_serbian" to topActivity.getString(R.string.name_serbian),
+        "name_slovak" to topActivity.getString(R.string.name_slovak),
+        "name_slovenian" to topActivity.getString(R.string.name_slovenian),
+        "name_spanish" to topActivity.getString(R.string.name_spanish),
+        "name_swedish" to topActivity.getString(R.string.name_swedish),
+        "name_tamil" to topActivity.getString(R.string.name_tamil),
+        "name_telugu" to topActivity.getString(R.string.name_telugu),
+        "name_thai" to topActivity.getString(R.string.name_thai),
+        "name_turkish" to topActivity.getString(R.string.name_turkish),
+        "name_ukrainian" to topActivity.getString(R.string.name_ukrainian),
+        "name_urdu" to topActivity.getString(R.string.name_urdu),
+        "name_uzbek" to topActivity.getString(R.string.name_uzbek),
+        "name_vietnamese" to topActivity.getString(R.string.name_vietnamese),
+        "name_catalan" to topActivity.getString(R.string.name_catalan),
+        "name_javanese" to topActivity.getString(R.string.name_javanese),
+        "name_nepali" to topActivity.getString(R.string.name_nepali),
+        "name_sinhala" to topActivity.getString(R.string.name_sinhala),
+        "name_burmese" to topActivity.getString(R.string.name_burmese),
+        "name_hausa" to topActivity.getString(R.string.name_hausa),
+        "name_swahili" to topActivity.getString(R.string.name_swahili),
+        "name_sundanese" to topActivity.getString(R.string.name_sundanese),
+        "name_zulu" to topActivity.getString(R.string.name_zulu), //祖鲁语
+        "name_portuguese_brazil" to topActivity.getString(R.string.name_portuguese_brazil),
+        "name_galician" to topActivity.getString(R.string.name_galician),
+        "name_welsh" to topActivity.getString(R.string.name_welsh),
+        "name_amharic" to topActivity.getString(R.string.name_amharic),
+        "name_somali" to topActivity.getString(R.string.name_somali),
+        "name_pashto" to topActivity.getString(R.string.name_pashto),
+        "name_afrikaans" to topActivity.getString(R.string.name_afrikaans),
+        "name_bosnian" to topActivity.getString(R.string.name_bosnian),
+        "name_basque" to topActivity.getString(R.string.name_basque),
+        "name_literary_chinese" to topActivity.getString(R.string.name_literary_chinese),
+        "name_assamese" to topActivity.getString(R.string.name_assamese),
+        "name_bangla" to topActivity.getString(R.string.name_bangla),
+        "name_oriya" to topActivity.getString(R.string.name_oriya),
+        "name_kurdish" to topActivity.getString(R.string.name_kurdish),
+        "name_inuktitut" to topActivity.getString(R.string.name_inuktitut),
+    )
+
+    val countryLocaleMap  = mapOf(
+        "country_iraqiran" to topActivity.getString(R.string.country_iraqiran),
+        "country_canada" to topActivity.getString(R.string.country_canada),
+        "country_wales" to topActivity.getString(R.string.country_wales),
+        "country_bosnia" to topActivity.getString(R.string.country_bosnia),
+        "country_nigeria" to topActivity.getString(R.string.country_nigeria),
+        "country_switzerland" to topActivity.getString(R.string.country_switzerland),
+        "country_herzegovina" to topActivity.getString(R.string.country_herzegovina),
+        "country_belgium" to topActivity.getString(R.string.country_belgium),
+        "country_afghanistan" to topActivity.getString(R.string.country_afghanistan),
+        "country_tanzania" to topActivity.getString(R.string.country_tanzania),
+        "country_somalia" to topActivity.getString(R.string.country_somalia),
+        "country_ethiopia" to topActivity.getString(R.string.country_ethiopia),
+        "country_armenia" to topActivity.getString(R.string.country_armenia),
+        "country_georgia" to topActivity.getString(R.string.country_georgia),
+        "country_uzbekistan" to topActivity.getString(R.string.country_uzbekistan),
+        "country_uk" to topActivity.getString(R.string.country_uk),
+        "country_macedonia" to topActivity.getString(R.string.country_macedonia),
+        "country_italy" to topActivity.getString(R.string.country_italy),
+        "country_iceland" to topActivity.getString(R.string.country_iceland),
+        "country_serbia" to topActivity.getString(R.string.country_serbia),
+        "country_albania" to topActivity.getString(R.string.country_albania),
+        "country_latvia" to topActivity.getString(R.string.country_latvia),
+        "country_slovenia" to topActivity.getString(R.string.country_slovenia),
+        "country_slovakia" to topActivity.getString(R.string.country_slovakia),
+        "country_malta" to topActivity.getString(R.string.country_malta),
+        "country_lithuania" to topActivity.getString(R.string.country_lithuania),
+        "country_ireland" to topActivity.getString(R.string.country_ireland),
+        "country_finland" to topActivity.getString(R.string.country_finland),
+        "country_south_africa" to topActivity.getString(R.string.country_south_africa), //南非
+        "country_estonia" to topActivity.getString(R.string.country_estonia), //爱沙尼亚
+        "country_iran" to topActivity.getString(R.string.country_iran),
+        "country_kenya" to topActivity.getString(R.string.country_kenya),
+        "country_greece" to topActivity.getString(R.string.country_greece), //希腊
+        "country_israel" to topActivity.getString(R.string.country_israel), //以色列
+        "country_srilanka" to topActivity.getString(R.string.country_srilanka), //斯里兰卡
+        "country_nepal" to topActivity.getString(R.string.country_nepal), //尼泊尔
+        "country_myanmar" to topActivity.getString(R.string.country_myanmar), //缅甸
+        "country_czechia" to topActivity.getString(R.string.country_czechia), //捷克
+        "country_portugal" to topActivity.getString(R.string.country_portugal), //葡萄牙
+        "country_romania" to topActivity.getString(R.string.country_romania),
+        "country_sweden" to topActivity.getString(R.string.country_sweden),
+        "country_denmark" to topActivity.getString(R.string.country_denmark),
+        "country_norway" to topActivity.getString(R.string.country_norway),
+        "country_croatia" to topActivity.getString(R.string.country_croatia),
+        "country_bulgaria" to topActivity.getString(R.string.country_bulgaria),
+        "country_korea" to topActivity.getString(R.string.country_korea),
+        "country_laos" to topActivity.getString(R.string.country_laos),
+        "country_cambodia" to topActivity.getString(R.string.country_cambodia),
+        "country_malaysia" to topActivity.getString(R.string.country_malaysia),
+        "country_saudiarabia" to topActivity.getString(R.string.country_saudiarabia),
+        "country_kazakhstan" to topActivity.getString(R.string.country_kazakhstan),
+        "country_hungary" to topActivity.getString(R.string.country_hungary),
+        "country_bangladesh" to topActivity.getString(R.string.country_bangladesh),
+        "country_mongolia" to topActivity.getString(R.string.country_mongolia),
+        "country_azerbaijan" to topActivity.getString(R.string.country_azerbaijan),
+        "country_germany" to topActivity.getString(R.string.country_germany),
+        "country_netherlands" to topActivity.getString(R.string.country_netherlands),
+        "country_france" to topActivity.getString(R.string.country_france),
+        "country_southeast_asia" to topActivity.getString(R.string.country_southeast_asia),
+        "country_brazil" to topActivity.getString(R.string.country_brazil),
+        "country_chile" to topActivity.getString(R.string.country_chile),
+        "country_china" to topActivity.getString(R.string.country_china),
+        "country_colombia" to topActivity.getString(R.string.country_colombia),
+        "country_india" to topActivity.getString(R.string.country_india),
+        "country_indonesia" to topActivity.getString(R.string.country_indonesia),
+        "country_italy" to topActivity.getString(R.string.country_italy),
+        "country_japan" to topActivity.getString(R.string.country_japan),
+        "country_korea" to topActivity.getString(R.string.country_korea),
+        "country_pakistan" to topActivity.getString(R.string.country_pakistan),
+        "country_philippines" to topActivity.getString(R.string.country_philippines),
+        "country_poland" to topActivity.getString(R.string.country_poland),
+        "country_russia" to topActivity.getString(R.string.country_russia),
+        "country_singapore" to topActivity.getString(R.string.country_singapore),
+        "country_spain" to topActivity.getString(R.string.country_spain),
+        "country_thailand" to topActivity.getString(R.string.country_thailand),
+        "country_turkey" to topActivity.getString(R.string.country_turkey),
+        "country_ukraine" to topActivity.getString(R.string.country_ukraine),
+        "country_uae" to topActivity.getString(R.string.country_uae),
+        "country_usa" to topActivity.getString(R.string.country_usa),
+        "country_vietnam" to topActivity.getString(R.string.country_vietnam),
+    )
+
+    val categoryLocaleMap = mapOf(
+        "category_common" to topActivity.getString(R.string.category_common),
+        "category_all" to topActivity.getString(R.string.category_all),
+        "category_asian" to topActivity.getString(R.string.category_asian),
+        "category_european" to topActivity.getString(R.string.category_european),
+        "category_african" to topActivity.getString(R.string.category_african),
+        "category_southeast_asian" to topActivity.getString(R.string.category_southeast_asian),
+        "category_other" to topActivity.getString(R.string.category_other),
+        "category_search" to topActivity.getString(R.string.category_search)
+     )
+
+    fun getCategoryName(categoryKey: String): String {
+        return categoryLocaleMap[categoryKey] ?: ""
+    }
+
+    fun getLanguageName(languageKey: String): String {
+        return languageLocaleMap[languageKey] ?: ""
+    }
+
+    fun getCountryName(countryKey: String): String {
+        return countryLocaleMap[countryKey] ?: ""
+    }
+
+}

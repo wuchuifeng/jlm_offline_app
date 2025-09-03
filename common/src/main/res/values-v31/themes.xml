@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.SplashTheme.NewSplash" parent="Theme.SplashScreen">
+        <!-- 启动画面背景色 -->
+        <item name="android:windowSplashScreenBackground">@android:color/white</item>
+        <!-- 启动画面icon图标：这里可以是图片、帧动画等-->
+<!--        <item name="android:windowSplashScreenBrandingImage">@drawable/ic_launcher_small</item>-->
+        <item name="android:windowSplashScreenAnimationDuration">1000</item>
+        <!-- Splash退出后的主题-->
+        <item name="postSplashScreenTheme">@style/Theme.AppTheme</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+</resources>

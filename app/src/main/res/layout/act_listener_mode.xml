@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/motion_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@mipmap/ic_main_bg"
+    app:layoutDescription="@xml/act_listen_scene">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fl_headercontainer"
+        app:layout_constraintTop_toTopOf="@id/motion_layout"
+        />
+
+<!--            <include-->
+<!--                android:id="@+id/include_langheader_single"-->
+<!--                layout="@layout/include_langheader_single"-->
+<!--                />-->
+
+
+<!--            <include-->
+<!--                android:id="@+id/include_langheader_double"-->
+<!--                layout="@layout/include_langheader_double"-->
+<!--                />-->
+
+    <!-- header -->
+<!--    <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--        android:id="@+id/head_banner"-->
+<!--        style="@style/listener_headerRoot"-->
+<!--        app:layout_constraintTop_toTopOf="@id/motion_layout"-->
+<!--        >-->
+
+<!--&lt;!&ndash;        "@drawable/tools_nav_icon_back_black_def"&ndash;&gt;-->
+<!--&lt;!&ndash;        <include layout="@layout/include_back" android:id="@+id/include_back"/>&ndash;&gt;-->
+
+<!--        &lt;!&ndash; 左输出UI &ndash;&gt;-->
+<!--        <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:gravity="center_vertical"-->
+<!--            >-->
+<!--            &lt;!&ndash;        "@drawable/tools_nav_icon_back_black_def"&ndash;&gt;-->
+<!--            <include layout="@layout/include_back" android:id="@+id/include_back" />-->
+
+<!--            <FrameLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                >-->
+<!--                <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--                    android:id="@+id/ll_from_language"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_gravity="right"-->
+<!--                    >-->
+<!--                    <androidx.appcompat.widget.AppCompatTextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="@string/str_translator"-->
+<!--                        android:textColor="@color/color_66"-->
+<!--                        android:textSize="11sp" />-->
+<!--                    <com.hjq.shape.view.ShapeTextView-->
+<!--                        style="@style/listener_lang_text"-->
+<!--                        android:id="@+id/tv_from_language"-->
+<!--                        android:text="中文"-->
+<!--                        app:shape_radius="20dp"-->
+<!--                        app:shape_solidColor="@color/color_light_blue"-->
+<!--                        />-->
+<!--                </androidx.appcompat.widget.LinearLayoutCompat>-->
+<!--            </FrameLayout>-->
+<!--        </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+<!--&lt;!&ndash;        android:src="@drawable/mine_offline_icon_exchange_single"&ndash;&gt;-->
+<!--        <androidx.appcompat.widget.AppCompatImageView-->
+<!--            android:id="@+id/iv_arrow"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="5dp"-->
+<!--            android:src="@mipmap/ic_translate_right" />-->
+<!--        &lt;!&ndash; 右输出UI &ndash;&gt;-->
+<!--        <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--            android:id="@+id/ll_to_language"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="left"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:gravity="center"-->
+<!--                >-->
+
+<!--                <androidx.appcompat.widget.AppCompatTextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="耳麦"-->
+<!--                    android:textColor="@color/color_66"-->
+<!--                    android:textSize="11sp" />-->
+
+<!--                <com.hjq.shape.view.ShapeTextView-->
+<!--                    style="@style/listener_lang_text"-->
+<!--                    android:id="@+id/tv_to_language"-->
+<!--                    android:text="英文"-->
+<!--                    app:shape_radius="20dp"-->
+<!--                    app:shape_solidColor="@color/color_light_blue"-->
+<!--                    />-->
+<!--            </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+<!--        </androidx.appcompat.widget.LinearLayoutCompat>-->
+<!--    </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+    <!--    app:layout_constraintBottom_toTopOf="@id/tv_click_pause"-->
+<!--    app:layout_constraintTop_toBottomOf="@id/head_banner"-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_click_to_listener"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="12dp"
+        android:text="点击麦克风按钮开始说话"
+        android:textColor="@color/color_66"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/cl_bottom"
+        app:layout_constraintEnd_toEndOf="@id/motion_layout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/motion_layout"
+        app:layout_constraintTop_toBottomOf="@id/motion_layout"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.hjq.shape.layout.ShapeRecyclerView
+        android:id="@+id/srecycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/head_banner"
+        app:layout_constraintBottom_toTopOf="@id/sl_recording"
+        app:layout_constraintEnd_toEndOf="@id/motion_layout"
+        app:layout_constraintStart_toStartOf="@id/motion_layout"
+        />
+    
+    <!-- 录制中的UI -->
+    <com.hjq.shape.layout.ShapeLinearLayout
+        android:id="@+id/sl_recording"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        app:shape_radius="36dp"
+        app:shape_solidColor="@color/white"
+        app:shape_strokeSize="2dp"
+        app:shape_strokeColor="@color/color_search_bg"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp"
+        android:elevation="5dp"
+
+        >
+        <me.xfans.lib.voicewaveview.VoiceWaveView
+            android:id="@+id/voice_wave"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            app:lineColor="@color/color_main"
+            app:waveMode="left_right"
+            android:gravity="center"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_tiny"
+            android:textColor="@color/color_text_third"
+            android:text="点击暂停"
+            android:textFontWeight="400"
+            />
+
+    </com.hjq.shape.layout.ShapeLinearLayout>
+
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        android:id="@+id/tv_click_pause"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:drawableBottom="@drawable/custom_icon_listup"-->
+<!--        android:text="点击暂停"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/voice_wave"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/motion_layout"-->
+<!--        app:layout_constraintStart_toStartOf="@id/motion_layout" />-->
+
+<!--&lt;!&ndash;    <com.airbnb.lottie.LottieAnimationView&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/voice_wave"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="40dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:lottie_rawRes="@raw/ani_volum_recording_longsmall"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:lottie_repeatCount="0"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:lottie_repeatMode="reverse" />&ndash;&gt;-->
+<!--    <me.xfans.lib.voicewaveview.VoiceWaveView-->
+<!--        android:id="@+id/voice_wave"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="30dp"-->
+<!--        app:lineColor="@color/color_main"-->
+<!--        app:waveMode="left_right"-->
+<!--        android:gravity="center"-->
+<!--        />-->
+    <!-- 底部设置 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="@id/motion_layout">
+
+        <include
+            android:id="@+id/include_bottom"
+            layout="@layout/include_listenmode_bottom"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    android:src="@drawable/translate_toolbar_but_play"-->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_record"
+        style="@style/listener_record"
+        app:layout_constraintBottom_toBottomOf="@id/motion_layout"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/motion_layout"
+        app:layout_constraintStart_toStartOf="@id/motion_layout" />
+</androidx.constraintlayout.motion.widget.MotionLayout>

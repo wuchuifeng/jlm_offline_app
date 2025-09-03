@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="divider_color">#EEEEEE</color>
+    <color name="theme_color">#4F33FF</color>
+    <color name="bg_color">#F2F2F7</color>
+    <color name="color_main">#4F33FF</color>
+    <color name="color_main_second">#0A84FF</color>
+    <color name="color_main_green">#02b145</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="color_10">#101010</color>
+    <color name="color_80">#808080</color>
+    <color name="color_33">#333333</color>
+    <color name="color_66">#666666</color>
+    <color name="color_e6">#E6E6E6</color>
+    <color name="color_99">#999999</color>
+    <color name="color_cf">#CFCFCF</color>
+    <color name="color_cc">#CCCCCC</color>
+    <color name="color_aa">#AAAAAA</color>
+    <color name="color_e3">#E3E3E3</color>
+    <color name="color_ab">#ABABAB</color>
+    <color name="color_c8">#C8C8C8</color>
+    <color name="color_c6">#C6C6C6</color>
+    <color name="color_8e">#8E8E8E</color>
+    <color name="color_be">#BEBEBE</color>
+    <color name="color_f1">#F1F1F1</color>
+    <color name="color_fa">#FAFAFA</color>
+    <color name="color_e8">#E8E8E8</color>
+    <color name="color_f8">#F8F8F8</color>
+    <color name="color_f3">#F3F3F3</color>
+    <color name="color_ed">#EDEDED</color>
+    <color name="color_8c">#8C8C8C</color>
+    <color name="color_26">#262626</color>
+    <color name="color_59">#595959</color>
+    <color name="color_f5">#F5F5F5</color>
+
+    <color name="defaultReachedColor">#4F33FF</color>
+    <color name="defaultUnreachedColor">#cccccc</color>
+    <color name="defaultTextColor">#4F33FF</color>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/empty_image_view_desc"
+        android:src="@mipmap/update_pop_top_bg" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pop_content_bg"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_update_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="@dimen/text_secondary"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:text="是否升级到1.0版本？" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_update_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="120dp"
+            android:layout_marginTop="10dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/text_secondary"
+            tools:text="更新说明：\n1.优化性能\n2.修复部分已知问题\n3.XXXX" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_btn_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_upgrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pop_update_btn"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:text="@string/btn_auto_upgrade"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_secondary" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btn_manual_upgrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:text="@string/btn_manual_upgrade"
+                android:textColor="@color/color_99"
+                android:textSize="@dimen/text_secondary" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <cn.chawloo.base.widget.NumberProgressBar
+            android:id="@+id/progress"
+            style="@style/NumberProgressBar_Red"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_update_pop_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/empty_image_view_desc"
+        android:background="@mipmap/update_pop_close" />
+</androidx.appcompat.widget.LinearLayoutCompat>

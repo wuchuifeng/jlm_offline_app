@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="16dp"
+    app:shape_radius="6dp"
+    app:shape_solidColor="@android:color/white"
+    app:shape_type="rectangle">
+
+    <ImageView
+        android:id="@+id/iv_language_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/language_icon_fold_down"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_language_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_language_group"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="中文(简体)" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_language_sub_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/color_8c8c8c"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_language_name"
+        app:layout_constraintStart_toEndOf="@id/tv_language_name"
+        app:layout_constraintTop_toTopOf="@id/tv_language_name"
+        tools:text="中文" />
+
+</com.hjq.shape.layout.ShapeConstraintLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2c2c36"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingVertical="20dp">
+
+    <RadioGroup
+        android:id="@+id/rg_industry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/rb_general">
+
+        <RadioButton
+            android:id="@+id/rb_general"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="6dp"
+            android:tag="general"
+            android:text="通用"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/rb_medical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="6dp"
+            android:tag="medical"
+            android:text="医疗"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/rb_social"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="6dp"
+            android:tag="social"
+            android:text="社交"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/rb_finance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="6dp"
+            android:tag="finance"
+            android:text="金融"
+            android:textColor="@android:color/white" />
+
+    </RadioGroup>
+
+</LinearLayout>

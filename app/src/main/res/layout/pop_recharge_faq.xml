@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    android:background="@drawable/pop_white_bg"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_policy_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="充值常见问题"
+        android:textColor="@android:color/black"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginBottom="20dp"
+        android:fadingEdgeLength="50dp"
+        android:requiresFadingEdge="vertical"
+        android:scrollbars="none">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Q：自由幻想每个角色最多可以拥有多少彩玉？\nA：目前每个角色最多可以拥有5000万彩玉。因此，充值的时候请务必注意您的余额数量，若出现充值未到账请您登录使用出现问题的QQ账号通过腾讯客服官网或公众号进行反馈咨询，提交后请耐心等待答复。\n
+Q：为何我充值的彩玉没有到账？\nA：1、通过Q币购买：网络可能存在延迟，请您退出游戏后重新登录查看；\n2、通过微信或网银购买：存在两个工作日的延迟，建议您在购买后的两个工作日内关注（不含周末和节假日）。\n温馨提示：如果超过时间仍未到账，请您通过腾讯客服官网或公众号进行反馈咨询，提交后请耐心等待答复。\nQ：为何充值活动的周边奖励还没有发放？\nA：请您时刻关注官网公告，如在周边发放时间外一个月仍然没有收到，请您通过腾讯客服官网或公众号进行反馈咨询，提交后请耐心等待答复。"
+            android:textColor="@android:color/black"
+            android:textSize="13sp" />
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

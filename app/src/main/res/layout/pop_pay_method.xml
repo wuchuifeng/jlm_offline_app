@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    android:background="@drawable/pop_white_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="14dp"
+            android:text="选择支付方式"
+            android:textColor="@android:color/black" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="14dp"
+            android:src="@drawable/tools_nav_icon_close_def" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_pay_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="30dp"
+        tools:itemCount="2"
+        tools:listitem="@layout/item_pay_method" />
+
+    <com.hjq.shape.view.ShapeButton
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:paddingVertical="9dp"
+        android:text="确认"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:shape_radius="99dp"
+        app:shape_solidColor="@color/theme_color" />
+</androidx.appcompat.widget.LinearLayoutCompat>

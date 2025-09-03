@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_main_bg"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_about_us_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/mine_setting_bg"
+        app:layout_constraintDimensionRatio="750:278"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <cn.chawloo.base.widget.HeadBanner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_about_us_bg">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="AI智能同声翻译"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_check_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_update"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_version_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="版本更新"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_primary"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.hjq.shape.view.ShapeTextView
+                        android:id="@+id/iv_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingHorizontal="5dp"
+                        android:paddingVertical="0.5dp"
+                        android:text="NEW"
+                        android:textColor="@android:color/white"
+                        android:textSize="9sp"
+                        app:layout_constraintBaseline_toTopOf="@id/tv_version_update"
+                        app:layout_constraintStart_toEndOf="@id/tv_version_update"
+                        app:shape_radiusInBottomRight="99dp"
+                        app:shape_radiusInTopLeft="99dp"
+                        app:shape_radiusInTopRight="99dp"
+                        app:shape_solidColor="#EE502F" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableEnd="@drawable/list_right_icon_next"
+                    android:drawablePadding="6dp"
+                    android:textSize="@dimen/text_tertiary"
+                    android:gravity="center_vertical|end"
+                    tools:text="v1.1.1\n(2120)" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/list_right_icon_next"
+                android:paddingVertical="15dp"
+                android:text="公司简介"
+                android:textSize="@dimen/text_primary"
+                android:textColor="@android:color/black" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_official_website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/list_right_icon_next"
+                android:paddingVertical="15dp"
+                android:textSize="@dimen/text_primary"
+                android:text="官网"
+                android:textColor="@android:color/black" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/list_right_icon_next"
+                android:paddingVertical="15dp"
+                android:text="公众号"
+                android:textColor="@android:color/black"
+                android:visibility="gone" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:gravity="center_horizontal"
+            android:text="极力米(深圳)技术有限公司"
+            android:textColor="@color/color_66"
+            android:textSize="11sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:gravity="center_horizontal"
+            android:text="隐私政策"
+            android:textSize="11sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

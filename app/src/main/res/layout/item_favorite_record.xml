@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    app:shape_radius="10dp"
+    app:shape_solidColor="@android:color/white"
+    app:shape_type="rectangle">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_translation_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_66"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="中文 - 英文" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/selector_uikit_control_picker"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_translation_type"
+        tools:text="你叫什么名字" />
+
+    <View
+        android:id="@+id/view_line"
+        style="@style/divider_horizontal"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toEndOf="@id/tv_content"
+        app:layout_constraintStart_toStartOf="@id/tv_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_content" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_translation_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@id/tv_content"
+        app:layout_constraintStart_toStartOf="@id/tv_content"
+        app:layout_constraintTop_toBottomOf="@id/view_line"
+        tools:text="你叫什么名字" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/lottie_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/trantext_result_icon_volume_def"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_translation_content" />
+</com.hjq.shape.layout.ShapeConstraintLayout>

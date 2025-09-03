@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@mipmap/ic_main_bg"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <!-- 二维码扫描，暂时隐藏 -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end|center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mine_tab_icon_screan" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- 个人信息 -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:src="@drawable/device_xtb"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="12dp"
+                android:id="@+id/ll_info"
+                >
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="游客"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_primary"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/iv_avatar"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!--                android:drawableEnd="@drawable/mine_userid_icon_copy_grey"-->
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="6dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_66"
+                    android:textSize="@dimen/text_secondary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/iv_avatar"
+                    app:layout_constraintTop_toBottomOf="@id/tv_name"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!--充值信息,暂时隐藏-->
+        <com.hjq.shape.layout.ShapeLinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical"
+            app:shape_radius="10dp"
+            app:shape_solidColor="@android:color/white">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingVertical="16dp"
+                    android:text="剩余999天" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_recharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableEnd="@drawable/list_right_icon_next0"
+                    android:drawablePadding="3dp"
+                    android:gravity="center_vertical|end"
+                    android:paddingVertical="16dp"
+                    android:text="充值" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View style="@style/divider_horizontal" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingVertical="16dp"
+                    android:text="离线翻译"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <com.hjq.shape.view.ShapeButton
+                    android:id="@+id/btn_download_offline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="6dp"
+                    android:text="下载"
+                    android:textSize="12sp"
+                    app:shape_radius="99dp"
+                    app:shape_solidColor="@color/theme_color"
+                    app:shape_textColor="@android:color/white" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </com.hjq.shape.layout.ShapeLinearLayout>
+
+        <!--语音配置-->
+        <com.hjq.shape.view.ShapeTextView
+            android:id="@+id/tv_speech_config"
+            style="@style/mine_item_title"
+            android:drawableStart="@mipmap/ic_speech_config"
+            android:drawableEnd="@drawable/list_right_icon_next"
+            android:text="语音配置"
+            app:shape_solidColor="@color/white"
+            app:shape_radius="10dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <com.hjq.shape.layout.ShapeLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+<!--            android:drawableStart="@drawable/ic_product_encyclopedia"-->
+            <com.hjq.shape.view.ShapeTextView
+                android:id="@+id/tv_product_ques"
+                style="@style/mine_item_title"
+                android:drawableStart="@mipmap/ic_mine_product"
+                android:drawableEnd="@drawable/list_right_icon_next"
+                android:text="产品解答"
+                app:shape_solidColor="@color/white"
+                app:shape_radius="10dp"
+                />
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/tv_product_ques"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:drawableStart="@mipmap/ic_mine_product"-->
+<!--                android:drawableEnd="@drawable/list_right_icon_next"-->
+<!--                android:drawablePadding="9dp"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:paddingVertical="15dp"-->
+<!--                android:text="产品解答"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textSize="14sp" />-->
+
+<!--            <View style="@style/divider_horizontal" />-->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:visibility="gone"
+                android:id="@+id/tv_dialogue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/mine_shopping_icon_dialogue"
+                android:drawableEnd="@drawable/list_right_icon_next"
+                android:drawablePadding="9dp"
+                android:gravity="center_vertical"
+                android:paddingVertical="15dp"
+                android:text="对话翻译"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+<!--            <View style="@style/divider_horizontal" />-->
+
+<!--            android:drawableStart="@drawable/mine_shopping_icon_texttranslate"-->
+            <com.hjq.shape.view.ShapeTextView
+                android:visibility="gone"
+                android:id="@+id/tv_text_translation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@mipmap/ic_text_trans"
+                android:drawableEnd="@drawable/list_right_icon_next"
+                android:drawablePadding="9dp"
+                android:gravity="center_vertical"
+                android:paddingTop="9dp"
+                android:paddingBottom="15dp"
+                android:text="文本翻译"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:shape_solidColor="@color/white"
+                app:shape_radius="10dp"
+                android:padding="12dp"
+                android:layout_marginTop="12dp"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/mine_shopping_icon_fishcard"
+                android:drawableEnd="@drawable/list_right_icon_next"
+                android:drawablePadding="9dp"
+                android:gravity="center_vertical"
+                android:paddingVertical="15dp"
+                android:text="Fish卡兑换"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <!--我的订单，暂时隐藏-->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:visibility="gone"
+                android:id="@+id/tv_my_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/mine_shopping_icon_order"
+                android:drawableEnd="@drawable/list_right_icon_next"
+                android:drawablePadding="9dp"
+                android:gravity="center_vertical"
+                android:paddingVertical="15dp"
+                android:text="我的订单"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/mine_shopping_icon_coupon"
+                android:drawableEnd="@drawable/list_right_icon_next"
+                android:drawablePadding="9dp"
+                android:gravity="center_vertical"
+                android:paddingTop="9dp"
+                android:paddingBottom="15dp"
+                android:text="优惠券"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+<!--            <View style="@style/divider_horizontal" />-->
+
+<!--            android:drawableStart="@drawable/mine_more_icon_onlinehelp"-->
+            <com.hjq.shape.view.ShapeTextView
+                android:id="@+id/tv_contact_us"
+                style="@style/mine_item_title"
+                android:drawableStart="@mipmap/ic_contactus"
+                android:drawableEnd="@drawable/list_right_icon_next"
+                android:text="联系我们"
+                app:shape_solidColor="@color/white"
+                app:shape_radius="10dp"
+                />
+
+<!--            android:drawableStart="@drawable/mine_more_icon_setting"-->
+            <!-- 设置 -->
+            <com.hjq.shape.view.ShapeTextView
+                android:id="@+id/tv_setting"
+                style="@style/mine_item_title"
+                android:drawableStart="@mipmap/ic_setting"
+                android:drawableEnd="@drawable/list_right_icon_next"
+                android:text="设置"
+                app:shape_solidColor="@color/white"
+                app:shape_radius="10dp"
+                />
+
+        </com.hjq.shape.layout.ShapeLinearLayout>
+
+        <com.hjq.shape.view.ShapeTextView
+            android:visibility="gone"
+            android:layout_marginTop="40dp"
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:paddingVertical="12dp"
+            android:text="登录"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:shape_radius="99dp"
+            app:shape_solidColor="@android:color/white" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

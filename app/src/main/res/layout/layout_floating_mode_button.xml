@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_floating_mode"
+    android:layout_width="65dp"
+    android:layout_height="65dp"
+    android:background="@drawable/floating_button_bg"
+    android:text="模式"
+    android:textColor="@color/white"
+    android:textSize="@dimen/text_tertiary"
+    android:gravity="center"
+    android:elevation="12dp"
+    android:shadowColor="#40000000"
+    android:shadowDx="2"
+    android:shadowDy="4"
+    android:shadowRadius="8" /> 

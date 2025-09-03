@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    app:shape_radius="8dp"
+    app:shape_solidColor="@color/color_item_bg">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_product_mode_icon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_product_mode_icon"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_product_mode_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="同传模式"
+            android:textColor="@color/color_text_primary"
+            android:textSize="@dimen/text_primary" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_product_mode_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_text_second"
+            android:textSize="@dimen/text_describ" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.hjq.shape.layout.ShapeLinearLayout>

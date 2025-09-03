@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="10dp"
+    >
+
+    <!-- 音量 -->
+    <com.hjq.shape.layout.ShapeLinearLayout
+        app:shape_solidColor="@color/white"
+        app:shape_radius="15dp"
+        style="@style/trans_set_itemRoot"
+        android:layout_marginTop="10dp"
+        android:paddingVertical="5dp"
+        android:id="@+id/sl_root"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@mipmap/ic_set_volumn"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_primary"
+            android:text="播放音量"
+            android:textColor="@android:color/black" />
+
+        <com.jaygoo.widget.RangeSeekBar
+            android:id="@+id/rs_volume"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:rsb_gravity="center"
+            android:layout_marginTop="3dp"
+            app:rsb_progress_radius="3dp"
+            app:rsb_progress_height="5dp"
+            app:rsb_min="0"
+            app:rsb_max="100"
+            app:rsb_progress_color="@color/theme_color"
+            app:rsb_progress_default_color="#14000000"
+            app:rsb_thumb_drawable="@null"
+            app:rsb_mode="single"
+            />
+    </com.hjq.shape.layout.ShapeLinearLayout>
+
+    <!--字体大小-->
+    <com.hjq.shape.layout.ShapeLinearLayout
+        android:id="@+id/sl_root1"
+        app:shape_solidColor="@color/white"
+        app:shape_radius="15dp"
+        style="@style/trans_set_itemRoot"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@mipmap/ic_set_font"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_primary"
+            android:text="字体大小"
+            android:textColor="@android:color/black" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_content1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/list_right_icon_next"
+            android:textSize="@dimen/text_secondary"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:text="默认" />
+    </com.hjq.shape.layout.ShapeLinearLayout>
+
+</FrameLayout>

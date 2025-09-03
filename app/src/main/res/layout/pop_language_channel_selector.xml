@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:shape_radiusInTopLeft="20dp"
+    app:shape_radiusInTopRight="20dp"
+    app:shape_solidColor="@color/bg_color">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@drawable/popup_icon_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="语言选择"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_close"
+            app:layout_constraintTop_toTopOf="@id/iv_close" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            >
+            <com.hjq.shape.view.ShapeTextView
+                android:layout_gravity="right"
+                style="@style/listener_lang_text"
+                android:id="@+id/tv_from_language"
+                android:text="英文"
+                app:shape_radius="20dp"
+                app:shape_solidColor="@color/color_light_blue"
+                app:shape_textColor="@android:color/black"
+                app:shape_textSelectedColor="@color/theme_color"
+                android:drawableEnd="@drawable/selector_lang_choose_list"
+                />
+        </FrameLayout>
+
+<!--        <com.hjq.shape.view.ShapeTextView-->
+<!--            android:id="@+id/tv_from_language"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="12dp"-->
+<!--            android:drawableEnd="@drawable/selector_lang_choose_list"-->
+<!--            android:drawablePadding="6dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="中文"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:shape_textColor="@android:color/black"-->
+<!--            app:shape_textSelectedColor="@color/theme_color" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatImageView-->
+<!--            android:id="@+id/iv_exchange"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/mine_offline_icon_exchange_single" />-->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_arrow"
+            android:layout_marginHorizontal="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_translate_right" />
+        <!--左声道layout-->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            >
+            <com.hjq.shape.view.ShapeTextView
+                android:layout_gravity="center"
+                style="@style/listener_lang_text"
+                android:id="@+id/tv_to_left_language"
+                android:text="英文"
+                app:shape_radius="20dp"
+                app:shape_solidColor="@color/color_light_blue"
+                app:shape_textColor="@android:color/black"
+                app:shape_textSelectedColor="@color/theme_color"
+                android:drawableEnd="@drawable/selector_lang_choose_list"
+                />
+        </FrameLayout>
+<!--        <com.hjq.shape.view.ShapeTextView-->
+<!--            android:id="@+id/tv_to_left_language"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="12dp"-->
+<!--            android:drawableEnd="@drawable/selector_lang_choose_list"-->
+<!--            android:drawablePadding="6dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="英文"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:shape_textColor="@android:color/black"-->
+<!--            app:shape_textSelectedColor="@color/theme_color" />-->
+        <!--右声道layout-->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            >
+            <com.hjq.shape.view.ShapeTextView
+                android:layout_gravity="center"
+                style="@style/listener_lang_text"
+                android:id="@+id/tv_to_right_language"
+                android:text="英文"
+                app:shape_radius="20dp"
+                app:shape_solidColor="@color/color_light_blue"
+                app:shape_textColor="@android:color/black"
+                app:shape_textSelectedColor="@color/theme_color"
+                android:drawableEnd="@drawable/selector_lang_choose_list"
+                />
+        </FrameLayout>
+<!--        <com.hjq.shape.view.ShapeTextView-->
+<!--            android:id="@+id/tv_to_right_language"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginStart="12dp"-->
+<!--            android:drawableEnd="@drawable/selector_lang_choose_list"-->
+<!--            android:drawablePadding="6dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="英文"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:shape_textColor="@android:color/black"-->
+<!--            app:shape_textSelectedColor="@color/theme_color" />-->
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- 搜索框 -->
+    <com.hjq.shape.layout.ShapeConstraintLayout
+        android:id="@+id/cl_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp"
+        app:shape_radius="100dp"
+        app:shape_solidColor="#0a000000"
+        app:shape_type="rectangle">
+
+        <cn.chawloo.base.widget.DeleteEditText
+            android:id="@+id/et_language_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:drawableStart="@mipmap/ic_search"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:hint="搜索语言"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp"
+            android:singleLine="true"
+            android:textColor="@color/color_8c8c8c"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </com.hjq.shape.layout.ShapeConstraintLayout>
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:id="@+id/rv_language"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginHorizontal="20dp"-->
+<!--        android:layout_marginBottom="20dp" />-->
+    <com.hjq.shape.layout.ShapeRecyclerView
+        android:id="@+id/rv_language"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        app:shape_radius="8dp"
+        app:shape_solidColor="@android:color/white" />
+</com.hjq.shape.layout.ShapeLinearLayout>

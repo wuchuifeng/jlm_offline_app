@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rv_translation_mode"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    app:shape_radiusInBottomLeft="10dp"
+    app:shape_radiusInBottomRight="10dp"
+    app:shape_solidColor="@android:color/white"
+    app:shape_type="rectangle">
+
+</com.hjq.shape.layout.ShapeRecyclerView>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="HomeTab" parent="Widget.Design.TabLayout">
+        <item name="android:textSize">18sp</item>
+        <item name="tabBackground">@android:color/transparent</item>
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabRippleColor">@android:color/transparent</item>
+        <item name="tabSelectedTextColor">@color/theme_color</item>
+        <item name="tabTextColor">@color/color_ab</item>
+    </style>
+
+    <!-- 翻译设置 -->
+    <style name="trans_set_itemRoot">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingVertical" tools:ignore="NewApi">12dp</item>
+        <item name="android:paddingHorizontal" tools:ignore="NewApi">10dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="listener_record">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:background">@mipmap/ic_voice_record</item>
+    </style>
+
+    <style name="listener_headerRoot">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+<!--    drawable/topbar_icon_listup-->
+    <style name="listener_lang_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawableEnd">@mipmap/ic_lang_down</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/text_secondary</item>
+        <item name="android:paddingHorizontal" tools:ignore="NewApi">10dp</item>
+        <item name="android:paddingVertical" tools:ignore="NewApi">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="langSelect_confirm_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal" tools:ignore="NewApi">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingVertical" tools:ignore="NewApi">10dp</item>
+        <item name="android:text">确定</item>
+        <item name="android:textSize">@dimen/text_primary</item>
+        <item name="android:layout_marginVertical" tools:ignore="NewApi">5dp</item>
+    </style>
+
+<!--    语言输出的设备-->
+    <style name="lang_output_device">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_66</item>
+        <item name="android:textSize">@dimen/text_tiny</item>
+    </style>
+
+<!--    我的 item  text-->
+    <style name="mine_item_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/text_secondary</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:drawablePadding">12dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+
+    <style name="bottomSheetDialog_setting" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/bottomSheetDialog_wrapper</item>
+    </style>
+
+    <style name="bottomSheetDialog_wrapper" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="bottomSheetDialog_industry_select" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/bottomSheetDialog_wrapper</item>
+    </style>
+</resources>

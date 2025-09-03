@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <cn.chawloo.base.widget.HeadBanner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:title="选择产品" />
+
+    <com.drake.brv.PageRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refresh"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/allProductList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.drake.brv.PageRefreshLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

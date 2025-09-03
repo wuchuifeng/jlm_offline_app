@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <cn.chawloo.base.widget.HeadBanner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/white"
+        android:title="充值详情" />
+
+    <com.hjq.shape.layout.ShapeConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:paddingHorizontal="18dp"
+        android:paddingVertical="15dp"
+        app:shape_radius="10dp"
+        app:shape_shadowColor="#55000000"
+        app:shape_shadowSize="5dp"
+        app:shape_solidColor="@color/white"
+        app:shape_type="rectangle">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="+30"
+            android:textColor="@color/theme_color"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Fish"
+            android:textColor="@color/theme_color"
+            android:textSize="15sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/tv_price"
+            app:layout_constraintStart_toEndOf="@id/tv_price" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingVertical="10dp"
+            android:text="充值方式"
+            android:textColor="@color/color_8c8c8c"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_price" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fish卡充值"
+            android:textColor="@color/color_262626"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_type"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_type" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:text="卡号"
+            android:textColor="@color/color_8c8c8c"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@id/tv_type"
+            app:layout_constraintTop_toBottomOf="@id/tv_type" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4129-8746-8883-1096-EEAB"
+            android:textColor="@color/color_262626"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_num"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_num" />
+
+        <View
+            android:id="@+id/line_view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_ccced0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_type"
+            app:layout_constraintTop_toBottomOf="@id/tv_num" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_order_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingVertical="10dp"
+            android:text="订单号"
+            android:textColor="@color/color_8c8c8c"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@id/tv_type"
+            app:layout_constraintTop_toBottomOf="@id/line_view" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="137202402029876456ccc"
+            android:textColor="@color/color_262626"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_order_num"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_order_num" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:text="完成时间"
+            android:textColor="@color/color_8c8c8c"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@id/tv_type"
+            app:layout_constraintTop_toBottomOf="@id/tv_order_num" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2024/02/01 12:07"
+            android:textColor="@color/color_262626"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_date" />
+    </com.hjq.shape.layout.ShapeConstraintLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

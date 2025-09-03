@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/root_view"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:paddingVertical="10dp"
+    android:visibility="gone">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_include_output"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/history_multiple_icon_ouput"
+        android:drawablePadding="8dp"
+        android:gravity="center_horizontal"
+        android:text="导出"
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/text_secondary" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_include_mark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/history_multiple_icon_mark"
+        android:drawablePadding="8dp"
+        android:gravity="center_horizontal"
+        android:text="标记"
+        android:textColor="@color/color_262626"
+        android:visibility="gone"
+        android:textSize="@dimen/text_secondary" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_include_del"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/history_multiple_icon_delete"
+        android:drawablePadding="8dp"
+        android:gravity="center_horizontal"
+        android:text="删除"
+        android:textColor="@color/color_262626"
+        android:textSize="@dimen/text_secondary" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

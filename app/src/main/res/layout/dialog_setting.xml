@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2c2c36"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="30dp">
+
+    <!-- 语速 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="语速："
+            android:textColor="@android:color/white" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/slider_speed"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:theme="@style/Theme.AppTheme"
+            android:value="50"
+            android:valueFrom="0"
+            android:valueTo="100" />
+    </LinearLayout>
+
+    <!-- 音调 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="音调："
+            android:textColor="@android:color/white" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/slider_tone"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:theme="@style/Theme.AppTheme"
+            android:value="50"
+            android:valueFrom="0"
+            android:valueTo="100" />
+    </LinearLayout>
+    <!-- 音量 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="音量："
+            android:textColor="@android:color/white" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/slider_volumn"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:theme="@style/Theme.AppTheme"
+            android:value="50"
+            android:valueFrom="0"
+            android:valueTo="100" />
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

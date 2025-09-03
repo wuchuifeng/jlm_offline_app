@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/title_bar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@android:color/transparent"
+    android:elevation="1dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingHorizontal="40dp"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/header_title"
+        tools:text="标题" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_back"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:src="@drawable/tools_nav_icon_back_black_def" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_action"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp" />
+</RelativeLayout>

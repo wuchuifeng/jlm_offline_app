@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingVertical="12dp"
+    app:shape_radius="9dp"
+    app:shape_solidColor="@color/bg_color"
+    app:shape_solidSelectedColor="#200A84FF"
+    app:shape_strokeColor="@color/color_e6"
+    app:shape_strokeSelectedColor="@color/theme_color"
+    app:shape_strokeSize="2dp">
+
+    <com.hjq.shape.view.ShapeTextView
+        android:id="@+id/tv_recharge_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:shape_textColor="@android:color/black"
+        app:shape_textSelectedColor="@color/theme_color"
+        tools:text="30天" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="14sp"
+        app:shape_textColor="@android:color/black"
+        app:shape_textSelectedColor="@color/theme_color"
+        tools:text="CN￥38.0" />
+</com.hjq.shape.layout.ShapeLinearLayout>

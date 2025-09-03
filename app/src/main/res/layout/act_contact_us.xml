@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@mipmap/ic_main_bg"
+    android:orientation="vertical">
+
+    <cn.chawloo.base.widget.HeadBanner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:title="联系我们" />
+
+    <com.hjq.shape.layout.ShapeConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        app:shape_radius="10dp"
+        app:shape_solidColor="@color/white"
+        app:shape_type="rectangle">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_email_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/contact_icon_mail"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:text="写邮件"
+            android:textColor="@color/ps_color_black"
+            android:textSize="@dimen/text_primary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:gravity="center_vertical"
+            android:text="工作邮箱：sammywj@163.com"
+            android:textColor="@color/color_8c8c8c"
+            android:textSize="@dimen/text_tertiary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_email_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_email_title" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/list_right_icon_next"
+            app:layout_constraintBottom_toBottomOf="@id/tv_email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_email_title" />
+
+    </com.hjq.shape.layout.ShapeConstraintLayout>
+
+    <com.hjq.shape.layout.ShapeConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        app:shape_radius="10dp"
+        app:shape_solidColor="@color/white"
+        app:shape_type="rectangle">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_online_service_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/contact_icon_online"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:text="工作微信"
+            android:textColor="@color/ps_color_black"
+            android:textSize="@dimen/text_primary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_online_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:gravity="center_vertical"
+            android:text="WX：sammy119"
+            android:textColor="@color/color_8c8c8c"
+            android:textSize="@dimen/text_tertiary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_online_service_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_online_service_title" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/list_right_icon_next"
+            app:layout_constraintBottom_toBottomOf="@id/tv_online_service"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_online_service_title" />
+
+    </com.hjq.shape.layout.ShapeConstraintLayout>
+
+    <com.hjq.shape.layout.ShapeConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        app:shape_radius="10dp"
+        app:shape_solidColor="@color/white"
+        app:shape_type="rectangle">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_telephone_service_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/contact_icon_telephone"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:text="联系电话"
+            android:textColor="@color/ps_color_black"
+            android:textSize="@dimen/text_primary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_telephone_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:text="15813703532"
+            android:textColor="@color/color_8c8c8c"
+            android:textSize="@dimen/text_tertiary"
+            app:layout_constraintStart_toStartOf="@id/tv_telephone_service_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_telephone_service_title" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_telephone_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/list_right_icon_next"
+            app:layout_constraintBottom_toBottomOf="@id/tv_telephone_service_time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_telephone_service_title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_telephone_service_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:text="工作时间:\n周一至周六9：00 - 23：00"
+            android:textColor="@color/theme_color"
+            android:textSize="@dimen/text_tertiary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/iv_telephone_service"
+            app:layout_constraintStart_toStartOf="@id/tv_telephone_service"
+            app:layout_constraintTop_toBottomOf="@id/tv_telephone_service" />
+
+    </com.hjq.shape.layout.ShapeConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

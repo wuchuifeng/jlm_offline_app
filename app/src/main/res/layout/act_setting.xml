@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@mipmap/ic_main_bg"
+    android:orientation="vertical">
+
+    <cn.chawloo.base.widget.HeadBanner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:title="设置" />
+
+    <com.hjq.shape.view.ShapeTextView
+        android:id="@+id/st_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/list_right_icon_next"
+        android:drawablePadding="9dp"
+        android:gravity="center_vertical"
+        android:paddingVertical="15dp"
+        android:text="关于极力米"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_primary"
+        app:shape_solidColor="@color/white"
+        app:shape_radius="10dp"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="12dp"
+        />
+
+    <com.hjq.shape.view.ShapeTextView
+        android:id="@+id/st_faq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/list_right_icon_next"
+        android:drawablePadding="9dp"
+        android:gravity="center_vertical"
+        android:paddingVertical="15dp"
+        android:text="帮助与反馈"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_primary"
+        app:shape_solidColor="@color/white"
+        app:shape_radius="10dp"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="12dp"
+        />
+
+    <com.hjq.shape.view.ShapeTextView
+        android:id="@+id/st_clearcache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/list_right_icon_next"
+        android:drawablePadding="9dp"
+        android:gravity="center_vertical"
+        android:paddingVertical="15dp"
+        android:text="清空缓存"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_primary"
+        app:shape_solidColor="@color/white"
+        app:shape_radius="10dp"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="12dp"
+        />
+
+    <com.hjq.shape.view.ShapeTextView
+        android:id="@+id/st_account_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/list_right_icon_next"
+        android:drawablePadding="9dp"
+        android:gravity="center_vertical"
+        android:paddingVertical="15dp"
+        android:text="账号设置"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:shape_solidColor="@color/white"
+        app:shape_radius="10dp"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="12dp"
+        android:visibility="gone"
+        />
+
+<!--    <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--            android:id="@+id/ll_about"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:paddingHorizontal="20dp">-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:paddingVertical="15dp"-->
+<!--                android:text="关于极力米"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textSize="15sp" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/tv_version"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:drawableEnd="@drawable/list_right_icon_next"-->
+<!--                android:textColor="@color/color_99"-->
+<!--                android:textSize="15sp" />-->
+<!--        </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:visibility="gone"-->
+<!--            android:id="@+id/tv_storage_space"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:drawableEnd="@drawable/list_right_icon_next"-->
+<!--            android:paddingHorizontal="20dp"-->
+<!--            android:paddingVertical="15dp"-->
+<!--            android:text="存储空间"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:textSize="15sp" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:id="@+id/tv_faq"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:drawableEnd="@drawable/list_right_icon_next"-->
+<!--            android:paddingHorizontal="20dp"-->
+<!--            android:paddingVertical="15dp"-->
+<!--            android:text="帮助与反馈"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:textSize="15sp" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:id="@+id/tv_account_setting"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:drawableEnd="@drawable/list_right_icon_next"-->
+<!--            android:paddingHorizontal="20dp"-->
+<!--            android:paddingVertical="15dp"-->
+<!--            android:text="账号设置"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:textSize="15sp" />-->
+
+<!--    </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+    <com.hjq.shape.view.ShapeTextView
+        android:visibility="gone"
+        android:id="@+id/tv_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:paddingVertical="12dp"
+        android:text="退出登录"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:shape_radius="99dp"
+        app:shape_solidColor="@android:color/white" />
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/ic_main_bg"
+    android:fitsSystemWindows="true"
+    >
+    <cn.chawloo.base.widget.HeadBanner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/header_title"
+        android:title="设置" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler"
+        />
+
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:visibility="gone"-->
+<!--        >-->
+<!--<androidx.appcompat.widget.LinearLayoutCompat-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:paddingHorizontal="10dp"-->
+<!--    android:orientation="vertical">-->
+<!--    <com.hjq.shape.view.ShapeTextView-->
+<!--        android:visibility="gone"-->
+<!--        android:id="@+id/tv_introduction_listener_mode"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="12dp"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:drawableEnd="@drawable/list_right_icon_next"-->
+<!--        android:paddingHorizontal="12dp"-->
+<!--        android:paddingVertical="20dp"-->
+<!--        android:text="了解听译模式"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        android:textSize="14sp"-->
+<!--        app:shape_radius="10dp"-->
+<!--        app:shape_solidColor="@android:color/white" />-->
+
+    <!-- 音量 -->
+<!--    <com.hjq.shape.layout.ShapeLinearLayout-->
+<!--        app:shape_solidColor="@color/white"-->
+<!--        app:shape_radius="15dp"-->
+<!--        style="@style/trans_set_itemRoot"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:paddingVertical="5dp"-->
+<!--        >-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:drawableStart="@mipmap/ic_set_volumn"-->
+<!--            android:drawablePadding="6dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="播放音量"-->
+<!--            android:textColor="@android:color/black" />-->
+<!--&lt;!&ndash;        <androidx.constraintlayout.widget.ConstraintLayout&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="100dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="40dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            >&ndash;&gt;-->
+<!--            &lt;!&ndash;播报音量范围在0-100&ndash;&gt;-->
+<!--&lt;!&ndash;            <androidx.appcompat.widget.AppCompatSeekBar&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/seek_bar_volume"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginTop="3dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:min="0"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:max="100"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:progress="90"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:progressDrawable="@drawable/layout_volume"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:splitTrack="false"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:thumb="@null" />&ndash;&gt;-->
+<!--        <com.jaygoo.widget.RangeSeekBar-->
+<!--            android:id="@+id/rs_volume"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_weight="1"-->
+<!--            app:rsb_gravity="center"-->
+<!--            android:layout_marginTop="3dp"-->
+<!--            app:rsb_progress_radius="3dp"-->
+<!--            app:rsb_progress_height="5dp"-->
+<!--            app:rsb_min="0"-->
+<!--            app:rsb_max="100"-->
+<!--            app:rsb_progress_color="@color/theme_color"-->
+<!--            app:rsb_progress_default_color="#14000000"-->
+<!--            app:rsb_thumb_drawable="@null"-->
+<!--            app:rsb_mode="single"-->
+<!--            />-->
+
+<!--&lt;!&ndash;            <androidx.appcompat.widget.AppCompatImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginStart="25dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/modeset_set_icon_volume"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:layout_constraintBottom_toBottomOf="@id/seek_bar_volume"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:layout_constraintTop_toTopOf="@id/seek_bar_volume" />&ndash;&gt;-->
+<!--&lt;!&ndash;        </androidx.constraintlayout.widget.ConstraintLayout>&ndash;&gt;-->
+
+<!--    </com.hjq.shape.layout.ShapeLinearLayout>-->
+
+<!--    &lt;!&ndash;字体大小&ndash;&gt;-->
+<!--    <com.hjq.shape.layout.ShapeLinearLayout-->
+<!--        android:id="@+id/sl_font_size"-->
+<!--        app:shape_solidColor="@color/white"-->
+<!--        app:shape_radius="15dp"-->
+<!--        style="@style/trans_set_itemRoot"-->
+<!--        >-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:drawableStart="@mipmap/ic_set_font"-->
+<!--            android:drawablePadding="6dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="字体大小"-->
+<!--            android:textColor="@android:color/black" />-->
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:id="@+id/tv_font_size"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:drawableEnd="@drawable/list_right_icon_next"-->
+<!--            android:drawablePadding="6dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="默认" />-->
+<!--    </com.hjq.shape.layout.ShapeLinearLayout>-->
+
+<!--    &lt;!&ndash;语速&ndash;&gt;-->
+<!--    <com.hjq.shape.layout.ShapeLinearLayout-->
+<!--        android:id="@+id/sl_play_speed"-->
+<!--        app:shape_solidColor="@color/white"-->
+<!--        app:shape_radius="15dp"-->
+<!--        style="@style/trans_set_itemRoot"-->
+<!--        >-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:drawableStart="@mipmap/ic_set_playspeed"-->
+<!--            android:drawablePadding="6dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="播报语速"-->
+<!--            android:textColor="@android:color/black" />-->
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:id="@+id/tv_play_speed"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:drawableEnd="@drawable/list_right_icon_next"-->
+<!--            android:drawablePadding="6dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="" />-->
+<!--    </com.hjq.shape.layout.ShapeLinearLayout>-->
+
+<!--    &lt;!&ndash;停顿&ndash;&gt;-->
+<!--    <com.hjq.shape.layout.ShapeLinearLayout-->
+<!--        android:id="@+id/sl_speak_break"-->
+<!--        app:shape_solidColor="@color/white"-->
+<!--        app:shape_radius="15dp"-->
+<!--        style="@style/trans_set_itemRoot"-->
+<!--        >-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:drawableStart="@mipmap/ic_set_break"-->
+<!--            android:drawablePadding="6dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="语音断句"-->
+<!--            android:textColor="@android:color/black" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:id="@+id/tv_speech_break"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:drawableEnd="@drawable/list_right_icon_next"-->
+<!--            android:drawablePadding="6dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="默认" />-->
+<!--    </com.hjq.shape.layout.ShapeLinearLayout>-->
+<!--    &lt;!&ndash;环境噪音&ndash;&gt;-->
+<!--    <com.hjq.shape.layout.ShapeLinearLayout-->
+<!--        android:id="@+id/sl_noise"-->
+<!--        app:shape_solidColor="@color/white"-->
+<!--        app:shape_radius="15dp"-->
+<!--        style="@style/trans_set_itemRoot"-->
+<!--        >-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:drawableStart="@mipmap/ic_set_noise"-->
+<!--            android:drawablePadding="6dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="环境噪音"-->
+<!--            android:textColor="@android:color/black" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:id="@+id/tv_environment_noise"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:drawableEnd="@drawable/list_right_icon_next"-->
+<!--            android:drawablePadding="6dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            />-->
+<!--    </com.hjq.shape.layout.ShapeLinearLayout>-->
+<!--    &lt;!&ndash;音调 隐藏&ndash;&gt;-->
+<!--    <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--        android:visibility="gone"-->
+<!--        android:id="@+id/ll_pitch"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="12dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:drawableStart="@drawable/modeset_set_icon_speakspeed"-->
+<!--            android:drawablePadding="6dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:paddingVertical="20dp"-->
+<!--            android:text="播报语调"-->
+<!--            android:textColor="@android:color/black" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:drawableEnd="@drawable/list_right_icon_next"-->
+<!--            android:drawablePadding="6dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="默认" />-->
+<!--    </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+<!--    &lt;!&ndash;播报声音选择 男声 女声&ndash;&gt;-->
+<!--    <com.hjq.shape.layout.ShapeLinearLayout-->
+<!--        android:id="@+id/sl_voicer"-->
+<!--        app:shape_solidColor="@color/white"-->
+<!--        app:shape_radius="15dp"-->
+<!--        style="@style/trans_set_itemRoot"-->
+<!--        >-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:drawableStart="@mipmap/ic_set_voicer"-->
+<!--            android:drawablePadding="6dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="播报声音"-->
+<!--            android:textColor="@android:color/black" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:id="@+id/tv_voicer"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:drawableEnd="@drawable/list_right_icon_next"-->
+<!--            android:drawablePadding="6dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="男声" />-->
+<!--    </com.hjq.shape.layout.ShapeLinearLayout>-->
+
+<!--    &lt;!&ndash;行业语音模版， 点击弹窗列表单选： 通用、医疗、社交、金融&ndash;&gt;-->
+<!--    <com.hjq.shape.layout.ShapeLinearLayout-->
+<!--        android:id="@+id/sl_scene"-->
+<!--        app:shape_solidColor="@color/white"-->
+<!--        app:shape_radius="15dp"-->
+<!--        style="@style/trans_set_itemRoot"-->
+<!--        >-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:drawableStart="@mipmap/ic_set_model"-->
+<!--            android:drawablePadding="6dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="行业语言模版"-->
+<!--            android:textColor="@android:color/black" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:id="@+id/tv_scene"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:drawableEnd="@drawable/list_right_icon_next"-->
+<!--            android:drawablePadding="6dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="通用" />-->
+<!--    </com.hjq.shape.layout.ShapeLinearLayout>-->
+
+<!--    <com.hjq.shape.layout.ShapeLinearLayout-->
+<!--        android:id="@+id/sl_custom"-->
+<!--        app:shape_solidColor="@color/white"-->
+<!--        app:shape_radius="15dp"-->
+<!--        style="@style/trans_set_itemRoot"-->
+<!--        >-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:drawableStart="@mipmap/ic_set_custom"-->
+<!--            android:drawablePadding="6dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="自定义词库"-->
+<!--            android:textColor="@android:color/black" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:drawableEnd="@drawable/list_right_icon_next"-->
+<!--            android:drawablePadding="6dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="关闭" />-->
+<!--    </com.hjq.shape.layout.ShapeLinearLayout>-->
+<!--</androidx.appcompat.widget.LinearLayoutCompat>-->
+<!--</androidx.core.widget.NestedScrollView>-->
+</androidx.appcompat.widget.LinearLayoutCompat>

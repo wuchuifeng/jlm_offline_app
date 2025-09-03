@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@drawable/shape_pop_top_corner_bg"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="15dp"
+            android:textSize="@dimen/text_secondary"
+            android:text="取消" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="请选择"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/text_secondary"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="15dp"
+            android:textSize="@dimen/text_secondary"
+            android:text="确定"
+            android:textColor="@color/selector_confirm_enable_text_color"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View style="@style/divider_horizontal" />
+
+    <com.drake.statelayout.StateLayout
+        android:id="@+id/state"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_describ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textSize="@dimen/text_describ"
+                android:text="提示信息"
+                android:textColor="#E96B22"/>
+
+            <com.zyyoona7.wheel.WheelView
+                android:id="@+id/first_wheel_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:background="@android:color/white"
+                app:wv_autoFitTextSize="true"
+                app:wv_lineSpacing="5dp"
+                app:wv_normalTextColor="@color/color_c8"
+                app:wv_selectedTextColor="@color/theme_color"
+                app:wv_textSize="@dimen/text_select" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.drake.statelayout.StateLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

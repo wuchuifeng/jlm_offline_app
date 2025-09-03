@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@mipmap/ic_main_bg"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_head_banner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:elevation="1dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/tools_nav_icon_back_black_def"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+<!--        android:drawableEnd="@drawable/home_topbar_icon_list_up"-->
+<!--        android:drawablePadding="5dp"-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="40dp"
+            android:singleLine="true"
+            android:text="翻译记录"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/header_title"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/iv_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_back" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_action"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:padding="12dp"
+            android:src="@drawable/tools_nav_icon_menu"
+            app:layout_constraintBottom_toBottomOf="@id/iv_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_back" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <!-- 搜索 -->
+        <com.hjq.shape.layout.ShapeConstraintLayout
+            android:id="@+id/cl_search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:shape_radius="100dp"
+            app:shape_solidColor="@color/color_search_bg"
+            android:layout_marginHorizontal="12dp"
+            app:shape_type="rectangle">
+
+            <com.hjq.shape.view.ShapeEditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:drawableStart="@mipmap/ic_search"
+                android:drawablePadding="6dp"
+                android:gravity="center_vertical"
+                android:hint="搜索翻译内容"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/color_8c8c8c"
+                android:textSize="@dimen/text_hint"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </com.hjq.shape.layout.ShapeConstraintLayout>
+
+        <!--导航-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_nav"
+            android:layout_marginLeft="12dp"
+            android:paddingVertical="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent" />
+<!--        <HorizontalScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingVertical="10dp"-->
+<!--            >-->
+<!--            <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--                android:id="@+id/ll_nav"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                />-->
+
+<!--        </HorizontalScrollView>-->
+
+
+        <com.drake.brv.PageRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginHorizontal="12dp"
+                android:id="@+id/rv_translation_record"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent" />
+        </com.drake.brv.PageRefreshLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <include
+        android:id="@+id/include_translation_records_bottom_operation"
+        layout="@layout/include_translation_records_bottom_operation" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

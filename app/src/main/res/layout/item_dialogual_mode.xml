@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+    <!--左边大布局-->
+    <com.hjq.shape.layout.ShapeLinearLayout
+        android:id="@+id/ll_left_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="2dp"
+        android:paddingVertical="10dp"
+        android:paddingTop="15dp"
+        android:layout_marginRight="50dp"
+        app:shape_solidColor="@android:color/white"
+        app:shape_radius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_left_target"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="..."
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_left_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:src="@drawable/translate_pop_icon_play_def" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:id="@+id/view_line"
+            style="@style/divider_horizontal"
+            android:layout_marginHorizontal="2dp"
+            android:layout_marginVertical="5dp"
+             />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_left_source"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:hint="..."
+            android:textColor="@color/color_66"
+            android:textColorHint="@color/color_66" />
+    </com.hjq.shape.layout.ShapeLinearLayout>
+
+    <!--右边大布局-->
+    <com.hjq.shape.layout.ShapeLinearLayout
+        android:id="@+id/ll_right_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="2dp"
+        android:paddingVertical="10dp"
+        android:paddingTop="15dp"
+        android:layout_marginLeft="50dp"
+        app:shape_solidColor="@android:color/white"
+        app:shape_radius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_right_target"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="..."
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_right_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:src="@drawable/translate_pop_icon_play_def" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            style="@style/divider_horizontal"
+            android:layout_marginHorizontal="2dp"
+            android:layout_marginVertical="5dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_right_source"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:hint="..."
+            android:textColor="@color/color_66"
+            android:textColorHint="@color/color_66" />
+    </com.hjq.shape.layout.ShapeLinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

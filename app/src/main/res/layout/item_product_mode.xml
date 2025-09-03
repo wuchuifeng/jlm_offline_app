@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginVertical="8dp"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingVertical="20dp"
+    android:paddingHorizontal="5dp"
+    app:shape_radius="12dp"
+    app:shape_solidColor="@android:color/white"
+    app:shape_strokeColor="#e0e0e0"
+    app:shape_strokeSize="1dp"
+    >
+
+    <!-- 功能图标 -->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_product_mode_icon"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerInside" />
+
+    <!-- 功能名称 -->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_product_mode_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="同声传译"
+        android:textColor="@color/color_text_primary"
+        android:textSize="@dimen/home_item_title"
+        android:gravity="center" />
+
+    <!-- 功能描述 -->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_product_mode_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="翻译机语音转换成A语言，并同步语音中间配置，同步输出到翻译的多个手机"
+        android:textColor="@color/color_text_second"
+        android:textSize="@dimen/text_describ"
+        android:gravity="center"
+        android:lineSpacingExtra="2dp"
+        android:maxLines="4"
+        android:ellipsize="end" />
+
+</com.hjq.shape.layout.ShapeLinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.view.ShapeTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tv_group_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:drawableEnd="@drawable/selector_lang_choose_list"
+    android:drawablePadding="6dp"
+    android:gravity="center_vertical"
+    android:text="常用语言"
+    android:textSize="@dimen/text_tertiary"
+    app:shape_textColor="@color/color_66"
+    app:shape_textSelectedColor="@color/theme_color"
+    app:shape_solidColor="@color/white"
+    app:shape_radiusInTopRight="8dp"
+    app:shape_radiusInTopLeft="8dp"
+    />

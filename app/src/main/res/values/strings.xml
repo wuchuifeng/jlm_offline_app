@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">极力米离线翻译</string>
+    <string name="str_translator">翻译机</string>
+
+    <string name="ai_translation_record">AI翻译记录</string>
+    <string name="ai_translation_record_desc">翻译记录，方便查询，并可进行总结</string>
+
+    <string name="east_asia">东亚</string>
+    <string name="southeast_asia">东南亚</string>
+
+    <string name="home_item_tongchuanTitle">同声传译</string>
+    <string name="home_item_tongchuanDesc">包含单语、双语、自由听三种模式，各模式会提供不一样的效果</string>
+    <string name="home_item_tongchuanDesc_2">翻译机拾音获取A语言，同步翻译为B语言，并同步输出到所连接的多个耳机。</string>
+    <string name="home_item_freedialogTitle">自由识别(双语)</string>
+    <string name="home_item_freedialogDesc">翻译系统支持47种语言自动识别，可同步翻译成两种目标语言，听众通过分组耳机自由切换收听语言</string>
+    <string name="home_item_doubledialogTitle">双组互译对话</string>
+    <string name="home_item_doubledialogDesc">翻译机设定好两种语言，两组人员各戴耳机，自由说话，同步听到对方语言的翻译。</string>
+    <string name="home_item_originalTitle">原声一对多</string>
+    <string name="home_item_originalDesc">设备实时传输原声音频，无翻译处理，同步输出至多个连接耳机</string>
+
+    <string name="free_time_hours"><![CDATA[%1$d小时%2$d分钟]]></string>
+    <string name="clear_free_time_hours"><![CDATA[%1$d小时%2$d分钟]]></string>
+    <string name="free_time_minutes"><![CDATA[%1$d分钟]]></string>
+    <string name="clear_free_time_minutes"><![CDATA[%1$d分钟]]></string>
+    <string name="vip_duration_less_than_1_minute"><![CDATA[不足1分钟]]></string>
+    <string name="vip_duration_0_minute"><![CDATA[已用完]]></string>
+    <string name="clear_vip_duration_less_than_1_minute"><![CDATA[不足1分钟]]></string>
+
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <cn.chawloo.base.widget.HeadBanner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="设置昵称" />
+
+    <cn.chawloo.base.widget.DeleteEditText
+        android:id="@+id/et_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shape_input_capsule_bg"
+        android:hint="请输入想要修改的昵称"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/color_ab"
+        android:textSize="16sp" />
+
+    <com.hjq.shape.view.ShapeButton
+        android:id="@+id/btn_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:text="完成"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:shape_radius="99dp"
+        app:shape_solidColor="@color/theme_color"
+        app:shape_solidDisabledColor="@color/color_ab" />
+</androidx.appcompat.widget.LinearLayoutCompat>

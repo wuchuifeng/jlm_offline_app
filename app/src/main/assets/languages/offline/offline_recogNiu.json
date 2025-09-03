@@ -1,0 +1,117 @@
+[
+    {
+        "category_key": "category_common",
+        "languageList": [
+            {
+                "name_key": "name_chinese",
+                "country_key": "country_china",
+                "recognize_key": "0",
+                "translate_key": "cn",
+                "synthesis_key": "Chinese",
+                "sortLetters": "*",
+                "azure_male_voicer": ["audiobook_male_1","male-qn-qingse", "male-qn-jingying", "male-qn-badao", "male-qn-daxuesheng", "Chinese (Mandarin)_Reliable_Executive", "Chinese (Mandarin)_Unrestrained_Young_Man"],
+                "azure_female_voicer": ["female-chengshu","female-shaonv", "female-yujie", "female-tianmei", "Chinese (Mandarin)_News_Anchor", "Chinese (Mandarin)_Mature_Woman"],
+                "key": "zh"
+            },
+            {
+                "name_key": "name_english",
+                "country_key": "country_usa",
+                "recognize_key": "0",
+                "translate_key": "en",
+                "synthesis_key": "English",
+                "sortLetters": "*",
+                "azure_male_voicer": ["audiobook_male_1", "English_Trustworthy_Man", "English_Diligent_Man", "English_Gentle-voiced_man", "English_Aussie_Bloke"],
+                "azure_female_voicer": ["female-chengshu", "English_Graceful_Lady", "English_Whispering_girl", "Sweet_Girl", "Attractive_Girl", "Serene_Woman"],
+                "key": "en"
+            },
+            {
+                "name_key": "name_spanish",
+                "country_key": "country_spain",
+                "recognize_key": "24",
+                "translate_key": "es",
+                "synthesis_key": "Spanish",
+                "sortLetters": "*",
+                "azure_male_voicer": ["audiobook_male_1", "Spanish_WiseScholar","Spanish_MaturePartner", "Spanish_ThoughtfulMan", "Spanish_RationalMan", "Spanish_ReservedYoungMan"],
+                "azure_female_voicer": ["female-chengshu", "Spanish_SereneWoman", "Spanish_Kind-heartedGirl", "Spanish_ConfidentWoman", "Spanish_SophisticatedLady", "Spanish_FrankLady"],
+                "key": "es"
+            },
+            {
+                "name_key": "name_french",
+                "country_key": "country_france",
+                "recognize_key": "23",
+                "translate_key": "fr",
+                "synthesis_key": "French",
+                "sortLetters": "*",
+                "azure_male_voicer": ["audiobook_male_1", "French_Male_Speech_New", "French_CasualMan", "French_MaleNarrator"],
+                "azure_female_voicer": ["female-chengshu", "French_Female_News Anchor", "French_MovieLeadFemale", "French_FemaleAnchor"],
+                "key": "fr"
+            },
+            {
+                "name_key": "name_russian",
+                "country_key": "country_russia",
+                "recognize_key": "22",
+                "translate_key": "ru",
+                "synthesis_key": "Russian",
+                "sortLetters": "*",
+                "azure_male_voicer": ["audiobook_male_1","Russian_ReliableMan","Russian_HandsomeChildhoodFriend", "Russian_AttractiveGuy", "Russian_Bad-temperedBoy"],
+                "azure_female_voicer": ["female-chengshu","Russian_BrightHeroine", "Russian_AmbitiousWoman", "Russian_CrazyQueen", "Russian_PessimisticGirl"],
+                "key": "ru"
+            },
+            {
+                "name_key": "name_arabic",
+                "country_key": "country_saudiarabia",
+                "recognize_key": "28",
+                "translate_key": "ar",
+                "synthesis_key": "Arabic",
+                "sortLetters": "*",
+                "azure_male_voicer": ["audiobook_male_1", "Arabic_FriendlyGuy"],
+                "azure_female_voicer": ["female-chengshu", "Arabic_CalmWoman"],
+                "key": "ar"
+            },
+            {
+                "name_key": "name_german",
+                "country_key": "country_germany",
+                "recognize_key": "25",
+                "translate_key": "de",
+                "synthesis_key": "German",
+                "sortLetters": "*",
+                "azure_male_voicer": ["audiobook_male_1", "German_PlayfulMan","German_FriendlyMan"],
+                "azure_female_voicer": ["female-chengshu", "German_SweetLady"],
+                "key": "de"
+            },
+            {
+                "name_key": "name_japanese",
+                "country_key": "country_japan",
+                "recognize_key": "20",
+                "translate_key": "ja",
+                "synthesis_key": "Japanese",
+                "sortLetters": "*",
+                "azure_male_voicer": ["Japanese_IntellectualSenior", "Japanese_LoyalKnight", "Japanese_DominantMan", "Japanese_SeriousCommander", "Japanese_GentleButler", "Japanese_OptimisticYouth"],
+                "azure_female_voicer": ["Japanese_DecisivePrincess", "Japanese_ColdQueen", "Japanese_DependableWoman", "Japanese_KindLady", "Japanese_CalmLady", "Japanese_GracefulMaiden"],
+                "key": "ja"
+            },
+            {
+                "name_key": "name_korean",
+                "country_key": "country_korea",
+                "recognize_key": "21",
+                "translate_key": "ko",
+                "synthesis_key": "Korean",
+                "sortLetters": "*",
+                "azure_male_voicer": ["audiobook_male_1", "Korean_PlayboyCharmer","Korean_CheerfulBoyfriend", "Korean_StrictBoss", "Korean_BraveYouth", "Korean_IntellectualSenior", "Korean_LonelyWarrior"],
+                "azure_female_voicer": ["female-chengshu", "Korean_SweetGirl", "Korean_EnchantingSister", "Korean_ShyGirl", "Korean_ReliableSister", "Korean_SassyGirl", "Korean_ElegantPrincess"],
+                "key": "ko"
+            },
+            {
+                "name_key": "name_thai",
+                "country_key": "country_thailand",
+                "recognize_key": "27",
+                "translate_key": "th",
+                "synthesis_key": "Thai",
+                "sortLetters": "SEA",
+                "azure_male_voicer": ["audiobook_male_1"],
+                "azure_female_voicer": ["female-chengshu"],
+                "key": "th"
+            }
+        ]
+    }
+]
